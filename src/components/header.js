@@ -22,9 +22,9 @@ const Header = ({ siteTitle }) => (
       </h1>
       <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
       <div style={{ display: `flex`, width: `40%`, margin: `0 auto`, justifyContent: `space-evenly` }}>
-        <h3><Link to="/" style={{ color: `${navy}`}}>About</Link></h3>
-        <h3><Link to="/work" style={{ color: `${navy}`}}>Work</Link></h3>
-        <h3><Link to="/resume" style={{ color: `${navy}`}}>Resume</Link></h3>
+        <h3><Link to="/" style={{ color: `${navy}`, fontVariant: `small-caps` }}>about</Link></h3>
+        <h3><Link to="/work" style={{ color: `${navy}`, fontVariant: `small-caps` }}>work</Link></h3>
+        <h3><Link to="/resume" style={{ color: `${navy}`, fontVariant: `small-caps` }}>resume</Link></h3>
       </div>
     </div>
   </header>

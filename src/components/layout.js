@@ -5,6 +5,10 @@ import { StaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+const offWhite = `#F2F2F0`;
+const lime = `#A6ED8E`;
+const navy = `#1B3C59`;
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -26,10 +30,10 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer>
+          <footer style={{ background: `${navy}`, width: `100%`, fontSize: `10px`, textAlign: `right`, color: `${offWhite}`, paddingRight: `1em` }}>
             © {new Date().getFullYear()}, Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
           </footer>
         </div>
       </>

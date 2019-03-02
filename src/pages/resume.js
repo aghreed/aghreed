@@ -15,10 +15,10 @@ const Resume = () => (
     {/* Flyover Technical */}
     <section style={{ padding: `0.25rem 0`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `2rem 4rem 1rem` }}>
+        <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: 0 }}>Flyover Technical</h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: 0 }}>Senior Consultant</h4>
+            <h2 style={{ marginBottom: `0.25rem` }}>Flyover Technical</h2>
+            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
             <h4>Omaha, NE</h4>
@@ -49,7 +49,7 @@ const Resume = () => (
             <h5 style={{ margin: `0.5rem 2rem`}}>Architectural Patterns</h5>
             <p style={{ marginLeft: `3rem`}}>SPA, REST, OAuth, Monorepos, Microservices, Microclients</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Infrastructure / DevOps</h5>
-            <p style={{ marginLeft: `3rem`}}>Git, npm, yarn, Docker, Jenkins, JIRA, BitBucket</p>
+            <p style={{ marginLeft: `3rem`}}>Git, npm, yarn, Artifactory, Docker, Jenkins, JIRA, BitBucket</p>
           </div>
         </div>
       </div>
@@ -57,10 +57,10 @@ const Resume = () => (
     {/* Object Partners, Inc */}
     <section style={{ padding: `0.25rem 0`, color: `${navy}`, background: `${lime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `2rem 4rem 1rem` }}>
+        <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: 0 }}>Object Partners, Inc</h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: 0 }}>Senior Consultant</h4>
+            <h2 style={{ marginBottom: `0.25rem` }}>Object Partners, Inc</h2>
+            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
             <h4>Omaha, NE</h4>
@@ -119,10 +119,10 @@ const Resume = () => (
     {/* Aviture, Inc */}
     <section style={{ padding: `0.25rem 0`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `2rem 4rem 1rem` }}>
+        <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: 0 }}>Aviture, Inc</h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: 0 }}>Software Developer</h4>
+            <h2 style={{ marginBottom: `0.25rem` }}>Aviture, Inc</h2>
+            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
             <h4>Omaha, NE</h4>

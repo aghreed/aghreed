@@ -3,10 +3,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-
-const navy = `#1B3C59`;
-const lime = `#A6ED8E`;
-const offWhite = `#F2F2F0`;
+import { lime, navy, offWhite } from "../components/colors";
 
 const IndexPage = () => (
   <Layout>
@@ -44,9 +41,9 @@ const IndexPage = () => (
       </div>
       <div style={{ width: `70%`, height: `1px`, backgroundColor: `${lime}`, margin: `0 auto` }}></div>
       <div style={{ maxWidth: `50%`, margin: `0 auto`, padding: `3rem 0` }}>
-        <h2 style={{ color: `${offWhite}`}}>Side / Community / For Fun Work</h2>
+        <h2 style={{ color: `${offWhite}`}}>Side / Community / Fun Work</h2>
         <p style={{ color: `${offWhite}` }}>
-           I care deeply about the collaborative nature of technology, which is why I frequently attend (and occassionally speak at and volunteer at) meetups, conferences, workshops, and hackathons around the country. I love any excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.   
+           I care deeply about the collaborative nature of technology, which is why I frequently attend (and occassionally speak at and volunteer at) meetups, conferences, workshops, and hackathons around the country. I love any excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
         <p style={{ color: `${offWhite}` }}>
           Check out my <Link to="/work" style={{ color: `${lime}` }}>work</Link> page for all the outside of nine-to-five stuff.

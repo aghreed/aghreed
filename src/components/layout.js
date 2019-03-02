@@ -3,11 +3,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import { navy, offWhite, lime } from "./colors";
 import "./layout.css"
-
-const offWhite = `#F2F2F0`;
-const lime = `#A6ED8E`;
-const navy = `#1B3C59`;
 
 const Layout = ({ children }) => (
   <StaticQuery

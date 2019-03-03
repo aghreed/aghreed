@@ -17,7 +17,7 @@ const Resume = () => (
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}>Flyover Technical</h2>
+            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.flyovertechnical.com" target="_blank" style={{ color: `${navy}`}}>Flyover Technical</a></h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
@@ -59,7 +59,7 @@ const Resume = () => (
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}>Object Partners, Inc</h2>
+            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
@@ -121,7 +121,7 @@ const Resume = () => (
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}>Aviture, Inc</h2>
+            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>

@@ -11,21 +11,22 @@ const Resume = () => (
     <div style={{ maxWidth: `1280px`, margin: `0 auto` }}>
       <Image2 />
     </div>
-    <h1 style={{ textAlign: `center`, marginTop: `1em`, fontVariant: `small-caps` }}>resume</h1>
+    <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
+    <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
     {/* Flyover Technical */}
-    <section style={{ padding: `0.25rem 0`, color: `${navy}`, background: `${offWhite}` }}>
+    <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `4rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}>
-              <a href="http://www.flyovertechnical.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Flyover Technical</a>
-            </h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+        <div style={{ margin: `4.75rem 4rem 1rem` }}>
+          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
+            <div style={{ display: `flex`, alignItems: `baseline` }}>
+              <h2 style={{ marginBottom: `0.25rem` }}>
+                <a href="http://www.flyovertechnical.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Flyover Technical</a>
+              </h2>
+              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+            </div>
+            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>April 2017 - December 2018</h4>
           </div>
-          <div style={{ display: `flex`, justifyContent: `space-between` }}>
-            <h4>Omaha, NE</h4>
-            <h4 style={{ marginRight: `2rem` }}>April 2017 - December 2018</h4>
-          </div>
+          <h4>Omaha, NE</h4>
         </div>
         <div style={{ margin: `1rem 6rem` }}>
           <h3>Roles and Responsibilities</h3>
@@ -57,7 +58,7 @@ const Resume = () => (
       </div>
     </section>
     {/* Object Partners, Inc */}
-    <section style={{ padding: `0.25rem 0`, color: `${navy}`, background: `${lime}` }}>
+    <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${lime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
@@ -119,7 +120,7 @@ const Resume = () => (
       </div>
     </section>
     {/* Aviture, Inc */}
-    <section style={{ padding: `0.25rem 0`, color: `${offWhite}`, background: `${navy}` }}>
+    <section style={{ padding: `0.25rem 0 3rem`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>

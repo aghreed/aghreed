@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../components/image"
+import Image2 from "../components/image2"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,16 +8,18 @@ import { navy, offWhite, lime } from "../components/colors";
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
-    <div style={{ maxWidth: `1280px`}}>
-      <Image />
+    <div style={{ maxWidth: `1280px`, margin: `0 auto` }}>
+      <Image2 />
     </div>
-    <h1 style={{ textAlign: `center`, marginTop: `1em` }}>Professional Work</h1>
+    <h1 style={{ textAlign: `center`, marginTop: `1em`, fontVariant: `small-caps` }}>resume</h1>
     {/* Flyover Technical */}
     <section style={{ padding: `0.25rem 0`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.flyovertechnical.com" target="_blank" style={{ color: `${navy}`}}>Flyover Technical</a></h2>
+            <h2 style={{ marginBottom: `0.25rem` }}>
+              <a href="http://www.flyovertechnical.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Flyover Technical</a>
+            </h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
@@ -29,11 +31,11 @@ const Resume = () => (
           <h3>Roles and Responsibilities</h3>
           <ul style={{ marginLeft: `3rem` }}>
             <li>Augment the technical staff of the Retirement Plans Division at Mutual of Omaha</li>
-            <li>Assimilate to and actively particpate in team Agile/Scrum practices</li>
-            <li>Lead front-end design and development</li>
-            <li>Develop internal library of resuable UI components</li>
-            <li>Contribute to back-end design and development</li>
+            <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
             <li>Collaborate closely with product owners, architects, designers, and business analysts</li>
+            <li>Lead front-end app design and development</li>
+            <li>Contribute to back-end design and development</li>
+            <li>Develop internal library of resuable UI components</li>
             <li>Maintain and support internal and external applications through multiple release cycles</li>
           </ul>
         </div>
@@ -59,7 +61,7 @@ const Resume = () => (
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
+            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>
@@ -72,12 +74,12 @@ const Resume = () => (
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
           <ul style={{ marginLeft: `3rem` }}>
             <li>Augment the technical staff of West Corporation</li>
-            <li>Assimilate to and actively particpate in team Agile/Scrum practices</li>
-            <li>Present sprint progress to stakeholders</li>
-            <li>Lead front-end design and development</li>
+            <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
+            <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
+            <li>Demonstrate sprint progress to stakeholders</li>
+            <li>Lead front-end app design and development</li>
             <li>Develop internal library of resuable UI components</li>
             <li>Contribute to REST API design and development</li>
-            <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
             <li>Deploy and support internal applications through multiple release cycles</li>
           </ul>
           <h4 style={{ marginLeft: `1.5rem` }}>Technologies Used</h4>
@@ -121,7 +123,7 @@ const Resume = () => (
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
           <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
+            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
             <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
           </div>
           <div style={{ display: `flex`, justifyContent: `space-between` }}>

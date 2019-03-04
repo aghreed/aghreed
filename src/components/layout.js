@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer style={{ background: `${navy}`, width: `100%`, fontSize: `10px`, textAlign: `right`, color: `${offWhite}`, paddingRight: `1em` }}>
+          <footer style={{ background: `${navy}`, width: `100%`, fontSize: `10px`, textAlign: `right`, color: `${offWhite}`, paddingRight: `1em`, paddingBottom: `1em` }}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>

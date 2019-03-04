@@ -30,7 +30,7 @@ const Resume = () => (
         </div>
         <div style={{ margin: `1rem 6rem` }}>
           <h3>Roles and Responsibilities</h3>
-          <ul style={{ marginLeft: `3rem` }}>
+          <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Augment the technical staff of the Retirement Plans Division at Mutual of Omaha</li>
             <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
             <li>Collaborate closely with product owners, architects, designers, and business analysts</li>
@@ -42,7 +42,7 @@ const Resume = () => (
         </div>
         <div style={{ margin: `2rem 6rem` }}>
           <h3>Technologies Used</h3>
-          <div>
+          <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -61,19 +61,19 @@ const Resume = () => (
     <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${lime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
+            <div style={{ display: `flex`, alignItems: `baseline` }}>
+              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
+              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+            </div>
+            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>January 2015 - December 2016</h4>
           </div>
-          <div style={{ display: `flex`, justifyContent: `space-between` }}>
-            <h4>Omaha, NE</h4>
-            <h4 style={{ marginRight: `2rem` }}>January 2015 - December 2016</h4>
-          </div>
+          <h4>Omaha, NE</h4>
         </div>
         <div style={{ margin: `1rem 6rem` }}>
           <h3>West Corporation</h3>
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
-          <ul style={{ marginLeft: `3rem` }}>
+          <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Augment the technical staff of West Corporation</li>
             <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
             <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
@@ -84,7 +84,7 @@ const Resume = () => (
             <li>Deploy and support internal applications through multiple release cycles</li>
           </ul>
           <h4 style={{ marginLeft: `1.5rem` }}>Technologies Used</h4>
-          <div>
+          <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -96,7 +96,7 @@ const Resume = () => (
           </div>
           <h3>TD Ameritrade</h3>
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
-          <ul style={{ marginLeft: `3rem` }}>
+          <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Augment the technical staff of TD Ameritrade</li>
             <li>Assimilate to and actively particpate in team Agile/Scrum practices</li>
             <li>Present sprint progress to stakeholders</li>
@@ -106,7 +106,7 @@ const Resume = () => (
             <li>Deploy and support an internal application through multiple release cycles</li>
           </ul>
           <h4 style={{ marginLeft: `1.5rem` }}>Technologies Used</h4>
-          <div>
+          <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -123,18 +123,18 @@ const Resume = () => (
     <section style={{ padding: `0.25rem 0 3rem`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div style={{ margin: `4rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `flex-start`, alignItems: `baseline` }}>
-            <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
-            <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
+          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
+            <div style={{ display: `flex`, alignItems: `baseline` }}>
+              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
+              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
+            </div>
+            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>February 2013 - January 2015</h4>
           </div>
-          <div style={{ display: `flex`, justifyContent: `space-between` }}>
-            <h4>Omaha, NE</h4>
-            <h4 style={{ marginRight: `2rem` }}>February 2013 - January 2015</h4>
-          </div>
+          <h4>Omaha, NE</h4>
         </div>
         <div style={{ margin: `1rem 6rem` }}>
           <h3>Roles and Responsibilities</h3>
-          <ul style={{ marginLeft: `3rem` }}>
+          <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Define, design, and develop custom software solutions for clients in-house</li>
             <li>Actively particpate in team Agile/Scrum practices</li>
             <li>Present technical progress to project stakeholders</li>
@@ -144,7 +144,7 @@ const Resume = () => (
         </div>
         <div style={{ margin: `2rem 6rem` }}>
           <h3>Technologies Used</h3>
-          <div>
+          <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>

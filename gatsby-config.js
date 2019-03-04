@@ -33,6 +33,14 @@ module.exports = {
         trackingId: `UA-102271686-1`
       }
     },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        autoLabel: process.env.NODE_ENV !== 'production',
+        labelFormat: "[local]",
+        cssPropOptimization: true
+      }
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline'

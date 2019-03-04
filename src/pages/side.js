@@ -1,4 +1,6 @@
 import React from "react"
+// eslint-disable-next-line
+import { css, jsx } from "@emotion/core"
 import Image3 from "../components/image3"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +10,90 @@ import WhitneyPortfolioGIF from "../images/whitneyportfolio.gif"
 import YonderGuide from "../images/yonderguide.png"
 import TBG from "../images/tbg.png"
 
+const headerDividerStyle = css`
+  width: 60%;
+  height: 1px;
+  background: ${navy};
+  margin: 1.75rem auto;
+  transition: width 500ms linear;
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+`;
+
+const sectionContainerStyle = css`
+  display: flex;
+  margin: 0 7rem;
+  justify-content: space-around;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+`;
+
+const goofySectionContainerStyle = css`
+  display: flex;
+  margin: 0 7rem;
+  justify-content: space-around;
+  @media (max-width: 960px) {
+    flex-direction: column-reverse;
+    margin: 0 2rem;
+  }
+`;
+
+const rightSideTextStyle = css`
+  width: 60%;
+  text-align: left;
+  justify-self: start;
+  align-self: center;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  transition: width 500ms linear;
+  @media (max-width: 960px) {
+    width: 70%;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-self: center;
+  }
+`;
+
+const leftSideTextStyle = css`
+  width: 60%;
+  text-align: right;
+  justify-self: end;
+  align-self: center;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  transition: width 500ms linear;
+  @media (max-width: 960px) {
+    width: 70%;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+    justify-self: center;
+  }
+`;
+
+const leftSideImageStyle = css`
+  justify-self: end;
+  width: 100%;
+  margin-right: 1rem;
+  @media (max-width: 960px) {
+    margin-right: 0;
+  }
+`;
+
+const rightSideImageStyle = css`
+  justify-self: start;
+  width: 100%;
+  margin-left: 1rem;
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
+`;
+
 const Side = () => (
   <Layout>
     <SEO title="Side" />
@@ -15,14 +101,14 @@ const Side = () => (
       <Image3 />
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, color: `${navy}`, fontVariant: `small-caps` }}>on the side</h1>
-    <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
+    <div css={headerDividerStyle} ></div>
     {/* Yonder.Guide */}
     <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
-      <div style={{ display: `grid`, margin: `0 7rem`, gridTemplateColumns: `5fr 3fr`, gridColumnGap: `2rem`, justifyContent: `space-around` }}>
-        <div style={{ justifySelf: `end`, width: `100%` }}>
+      <div css={goofySectionContainerStyle}>
+        <div css={leftSideImageStyle}>
           <div style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${YonderGuide})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
         </div>
-        <div style={{ textAlign: `left`, justifySelf: `start`, alignSelf: `center`, marginRight: `3rem` }}>
+        <div css={rightSideTextStyle}>
           <h2><a style={{ color: `${navy}`}} href="https://github.com/aghreed/yonder.guide" target="_blank" rel="noopener noreferrer">Yonder.Guide</a></h2>
           <p>Yonder.Guide is for discovering, documenting, and sharing travel experiences.</p>
           <p>
@@ -33,26 +119,26 @@ const Side = () => (
     </section>
     {/* Whiteny's site */}
     <section style={{ padding: `5rem 0`, background: `${navy}`, color: `${offWhite}` }}>
-      <div style={{ display: `grid`, margin: `0 7rem`, gridTemplateColumns: `3fr 5fr`, gridColumnGap: `2rem`, justifyContent: `space-around` }}>
-        <div style={{ textAlign: `right`, justifySelf: `end`, alignSelf: `center`, marginLeft: `3rem` }}>
+      <div css={sectionContainerStyle}>
+        <div css={leftSideTextStyle}>
           <h2><a href="http://www.whitneyjenich.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}` }}>Whitney's Portfolio</a></h2>
           <p>I was honored when good friend and college classmate, Whitney Jenich, asked me to develop her portfolio site in 2018.</p>
           <p>
             I love any opportunity to work with talented designers like Whitney, and this project served as a great introduction to some new technologies for me. This was my first time working with designs made with Sketch, and was my first Gatsby site. I've since come to appreciate both technologies enough to use them in producing my own portfolio.
           </p>
         </div>
-        <div style={{ justifySelf: `start`, width: `100%` }}>
-          <div onClick={() => window.open("http://www.whitneyjenich.com", "_blank")} style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${WhitneyPortfolioGIF})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
+        <div css={rightSideImageStyle}>
+          <div onClick={() => window.open("http://www.whitneyjenich.com", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${WhitneyPortfolioGIF})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
         </div>
       </div>
     </section>
     {/* TBG site */}
     <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
-      <div style={{ display: `grid`, margin: `0 7rem`, gridTemplateColumns: `5fr 3fr`, gridColumnGap: `2rem`, justifyContent: `space-around` }}>
-        <div style={{ justifySelf: `end`, width: `100%` }}>
-          <div onClick={() => window.open("http://www.tbgco.com", "_blank")} style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${TBG})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
+      <div css={goofySectionContainerStyle}>
+        <div style={{ justifySelf: `end`, width: `100%`, marginRight: `1rem` }}>
+          <div onClick={() => window.open("http://www.tbgco.com", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${TBG})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
         </div>
-        <div style={{ textAlign: `left`, justifySelf: `start`, alignSelf: `center`, marginRight: `3rem` }}>
+        <div css={rightSideTextStyle}>
           <h2><a href="http://www.tbgco.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>The Benefit Group</a></h2>
           <p>The Benefit Group (TBG) is an Omaha-based company that provides employee benefit packages for self-funded employers.</p>
           <p>
@@ -63,11 +149,11 @@ const Side = () => (
     </section>
     {/* Angular controllerAs syntax talk */}
     <section style={{ padding: `5rem 0`, background: `${lime}`, color: `${navy}` }}>
-      <div style={{ display: `grid`, margin: `0 7rem`, gridTemplateColumns: `3fr 5fr`, gridColumnGap: `2rem`, justifyContent: `space-around` }}>
-        <div style={{ textAlign: `right`, justifySelf: `end`, alignSelf: `center`, marginLeft: `3rem` }}>
+      <div css={sectionContainerStyle}>
+        <div css={leftSideTextStyle}>
           <h2>Talks</h2>
           <p>
-            I’ve spoken at multiple meetups and events, including at Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
+            I’ve spoke at multiple meetups and events, including at Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
           </p>
           <p>
           Thanks to the good folks at <a style={{ color: `${navy}`, textDecoration: `underline` }} href="http://techomaha.com" target="_blank" rel="noopener noreferrer">TechOmaha</a>,
@@ -75,16 +161,29 @@ const Side = () => (
            The source code of the presentation is also available on <a style={{ color: `${navy}`, textDecoration: `underline`}} href="https://github.com/aghreed/controllerAs-syntax-slides">Github</a>.
           </p>
         </div>
-        <div style={{ justifySelf: `start`, margin: `0 auto` }}>
-          <iframe title="controllerAs-syntax-talk" width="560" height="315" src="https://www.youtube.com/embed/QOiqPLL2Tec" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <div css={css`
+          justify-self: start;
+          align-self: stretch;
+          margin: 0 auto;
+          padding-left: 1rem;
+          min-width: 560px;
+          min-height: 315px;
+          @media (max-width: 960px) {
+            justify-self: center;
+            padding-left: 0;
+            min-width: 300px;
+            min-height: 175px;
+          }
+          `}>
+          <iframe title="controllerAs-syntax-talk" width="100%" height="100%" src="https://www.youtube.com/embed/QOiqPLL2Tec" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
       </div>
     </section>
     {/* Conferences attended - React Rally - MidwestJS - NEJS Conf */}
     {/* Meetups - ngNebraska - NEJS - Mobile Meetup - NodeSchool */}
     <section style={{ padding: `5rem 0`, background: `${navy}`, color: `${offWhite}` }}>
-      <div style={{ display: `grid`, margin: `0 7rem`, gridTemplateColumns: `1fr 1fr`, gridColumnGap: `2rem`, justifyContent: `space-evenly` }}>
-        <div style={{ justifySelf: `center`, marginLeft: `3rem` }}>
+      <div css={sectionContainerStyle}>
+        <div style={{ justifySelf: `center`, margin: `3rem` }}>
           <h2 style={{ textAlign: `center` }}>Recent Conferences</h2>
           <ul>
             <li><a style={{ color: `${offWhite} `}} href="http://midwestjs.com/#/main" target="_blank" rel="noopener noreferrer">MidwestJS 2018 - Minneapolis, MN</a></li>
@@ -92,7 +191,7 @@ const Side = () => (
             <li><a style={{ color: `${offWhite}` }} href="https://2018.nejsconf.com/" target="_blank" rel="noopener noreferrer">NEJS Conf 2018 - Omaha, NE</a></li>
           </ul>
         </div>
-        <div style={{ justifySelf: `center`, marginRight: `3rem` }}>
+        <div style={{ justifySelf: `center`, margin: `3rem` }}>
           <h2 style={{ textAlign: `center`}}>Meetups and Workshops</h2>
           <ul>
             <li><a style={{ color: `${offWhite} `}} href="https://nebraskajs.com/" target="_blank" rel="noopener noreferrer">Nebraska JS</a></li>

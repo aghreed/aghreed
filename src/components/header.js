@@ -52,7 +52,7 @@ const Header = ({ siteTitle }) => (
         }
       `}>
         <h3><Link to="/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>about</Link></h3>
-        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>on the side</Link></h3>
+        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps`, wordSpacing: `-2px` }} activeStyle={{ textDecoration: `underline` }}>on the side</Link></h3>
         <h3><Link to="/resume/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>resume</Link></h3>
       </div>
     </div>

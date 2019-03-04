@@ -1,9 +1,82 @@
 import React from "react"
+// eslint-disable-next-line
+import { css, jsx } from "@emotion/core";
 import Image2 from "../components/image2"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { navy, offWhite, lime } from "../components/colors";
+
+const headerDividerStyle = css`
+  width: 60%;
+  height: 1px;
+  background: ${navy};
+  margin: 1.75rem auto;
+  transition: width 500ms linear;
+  @media (max-width: 850px) {
+    width: 80%;
+  }
+`;
+
+const companyHeaderContainerStyle = css`
+  margin: 4.75rem 4rem 1rem;
+  @media (max-width: 850px) {
+    margin: 2.5rem 1.5rem 1rem;
+  }
+`;
+
+const companyHeaderStyle = css`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+`;
+
+const companyNameAndTitleStyle = css`
+  display: flex;
+  align-items: baseline;
+  @media (max-width: 850px) {
+    flex-direction: column;
+  }
+`;
+
+const companyTitleStyle = css`
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+  @media (max-width: 850px) {
+    margin-left: 0;
+  }
+`;
+
+const rolesTextStyle = css`
+  margin: 1rem 6rem;
+  @media (max-width: 850px) {
+    margin: 1rem 1rem 1rem 2.5rem;
+  }
+`;
+
+const techTextStyle = css`
+  margin: 2rem 6rem;
+  @media (max-width: 850px) {
+    margin: 2rem 1rem 1rem 2.5rem;
+  }
+`;
+
+const roleListStyle = css`
+  margin: 0 8rem 0 3rem;
+  @media (max-width: 850px) {
+    margin: 0 3rem;
+  }
+`;
+
+const techListStyle = css`
+  margin-right: 8rem;
+  @media (max-width: 850px) {
+    margin-right: 3rem;
+  }
+`;
 
 const Resume = () => (
   <Layout>
@@ -12,25 +85,25 @@ const Resume = () => (
       <Image2 />
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
-    <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
+    <div css={headerDividerStyle} />
     {/* Flyover Technical */}
-    <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${offWhite}` }}>
+    <section style={{ padding: `4rem 0 3rem`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `4.75rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
-            <div style={{ display: `flex`, alignItems: `baseline` }}>
+        <div css={companyHeaderContainerStyle}>
+          <div css={companyHeaderStyle}>
+            <div css={companyNameAndTitleStyle}>
               <h2 style={{ marginBottom: `0.25rem` }}>
                 <a href="http://www.flyovertechnical.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Flyover Technical</a>
               </h2>
-              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+              <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
             <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>April 2017 - December 2018</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
-        <div style={{ margin: `1rem 6rem` }}>
+        <div css={rolesTextStyle}>
           <h4>Roles and Responsibilities</h4>
-          <ul style={{ margin: `0 8rem 0 3rem` }}>
+          <ul css={roleListStyle}>
             <li>Augment the technical staff of the Retirement Plans Division at Mutual of Omaha</li>
             <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
             <li>Collaborate closely with product owners, architects, designers, and business analysts</li>
@@ -40,9 +113,9 @@ const Resume = () => (
             <li>Maintain and support internal and external applications through multiple release cycles</li>
           </ul>
         </div>
-        <div style={{ margin: `2rem 6rem` }}>
+        <div css={techTextStyle}>
           <h4>Technologies Used</h4>
-          <div style={{ marginRight: `8rem` }}>
+          <div css={techListStyle}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -60,20 +133,20 @@ const Resume = () => (
     {/* Object Partners, Inc */}
     <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${lime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `4rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
-            <div style={{ display: `flex`, alignItems: `baseline` }}>
+        <div css={companyHeaderContainerStyle}>
+          <div css={companyHeaderStyle}>
+            <div css={companyNameAndTitleStyle}>
               <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
-              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Senior Consultant</h4>
+              <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
             <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>January 2015 - December 2016</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
-        <div style={{ margin: `1rem 6rem` }}>
+        <div css={rolesTextStyle}>
           <h3>West Corporation</h3>
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
-          <ul style={{ margin: `0 8rem 0 3rem` }}>
+          <ul css={roleListStyle}>
             <li>Augment the technical staff of West Corporation</li>
             <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
             <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
@@ -84,7 +157,7 @@ const Resume = () => (
             <li>Deploy and support internal applications through multiple release cycles</li>
           </ul>
           <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
-          <div style={{ marginRight: `8rem` }}>
+          <div css={techListStyle}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -96,7 +169,7 @@ const Resume = () => (
           </div>
           <h3>TD Ameritrade</h3>
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
-          <ul style={{ margin: `0 8rem 0 3rem` }}>
+          <ul css={roleListStyle}>
             <li>Augment the technical staff of TD Ameritrade</li>
             <li>Assimilate to and actively particpate in team Agile/Scrum practices</li>
             <li>Present sprint progress to stakeholders</li>
@@ -106,7 +179,7 @@ const Resume = () => (
             <li>Deploy and support an internal application through multiple release cycles</li>
           </ul>
           <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
-          <div style={{ marginRight: `8rem` }}>
+          <div css={techListStyle}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
@@ -122,19 +195,19 @@ const Resume = () => (
     {/* Aviture, Inc */}
     <section style={{ padding: `0.25rem 0 3rem`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
-        <div style={{ margin: `4rem 4rem 1rem` }}>
-          <div style={{ display: `flex`, justifyContent: `space-between`, alignItems: `baseline` }}>
-            <div style={{ display: `flex`, alignItems: `baseline` }}>
+        <div css={companyHeaderContainerStyle}>
+          <div css={companyHeaderStyle}>
+            <div css={companyNameAndTitleStyle}>
               <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
-              <h4 style={{ marginLeft: `0.5rem`, marginBottom: `0.25rem` }}>Software Developer</h4>
+              <h4 css={companyTitleStyle}>Software Developer</h4>
             </div>
             <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>February 2013 - January 2015</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
-        <div style={{ margin: `1rem 6rem` }}>
+        <div css={rolesTextStyle}>
           <h4>Roles and Responsibilities</h4>
-          <ul style={{ margin: `0 8rem 0 3rem` }}>
+          <ul css={roleListStyle}>
             <li>Define, design, and develop custom software solutions for clients in-house</li>
             <li>Actively particpate in team Agile/Scrum practices</li>
             <li>Present technical progress to project stakeholders</li>
@@ -142,9 +215,9 @@ const Resume = () => (
             <li>Collaborate closely with clients, designers, quality assurers, and subject matter experts</li>
           </ul>
         </div>
-        <div style={{ margin: `2rem 6rem` }}>
+        <div css={techTextStyle}>
           <h4>Technologies Used</h4>
-          <div style={{ marginRight: `8rem` }}>
+          <div css={techListStyle}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>
             <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>

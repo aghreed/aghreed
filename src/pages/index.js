@@ -46,7 +46,7 @@ const IndexPage = () => (
            I care deeply about the collaborative nature of technology, which is why I frequently attend (and occassionally speak at and volunteer at) meetups, conferences, workshops, and hackathons around the country. I love any excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
         <p style={{ color: `${offWhite}` }}>
-          Check out my <Link to="/side" style={{ color: `${lime}` }}>work</Link> page for all the outside of nine-to-five stuff.
+          Check out my <Link to="/side" style={{ color: `${lime}` }}>side work</Link> page for all the outside of nine-to-five stuff.
         </p>
       </div>
     </div>

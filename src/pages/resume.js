@@ -8,7 +8,7 @@ import { navy, offWhite, lime } from "../components/colors";
 const Resume = () => (
   <Layout>
     <SEO title="Resume" />
-    <div style={{ maxWidth: `1280px`, margin: `0 auto` }}>
+    <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
       <Image2 />
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
@@ -29,7 +29,7 @@ const Resume = () => (
           <h4>Omaha, NE</h4>
         </div>
         <div style={{ margin: `1rem 6rem` }}>
-          <h3>Roles and Responsibilities</h3>
+          <h4>Roles and Responsibilities</h4>
           <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Augment the technical staff of the Retirement Plans Division at Mutual of Omaha</li>
             <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
@@ -41,7 +41,7 @@ const Resume = () => (
           </ul>
         </div>
         <div style={{ margin: `2rem 6rem` }}>
-          <h3>Technologies Used</h3>
+          <h4>Technologies Used</h4>
           <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
@@ -83,7 +83,7 @@ const Resume = () => (
             <li>Contribute to REST API design and development</li>
             <li>Deploy and support internal applications through multiple release cycles</li>
           </ul>
-          <h4 style={{ marginLeft: `1.5rem` }}>Technologies Used</h4>
+          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
           <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
@@ -105,7 +105,7 @@ const Resume = () => (
             <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
             <li>Deploy and support an internal application through multiple release cycles</li>
           </ul>
-          <h4 style={{ marginLeft: `1.5rem` }}>Technologies Used</h4>
+          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
           <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
@@ -133,7 +133,7 @@ const Resume = () => (
           <h4>Omaha, NE</h4>
         </div>
         <div style={{ margin: `1rem 6rem` }}>
-          <h3>Roles and Responsibilities</h3>
+          <h4>Roles and Responsibilities</h4>
           <ul style={{ margin: `0 8rem 0 3rem` }}>
             <li>Define, design, and develop custom software solutions for clients in-house</li>
             <li>Actively particpate in team Agile/Scrum practices</li>
@@ -143,7 +143,7 @@ const Resume = () => (
           </ul>
         </div>
         <div style={{ margin: `2rem 6rem` }}>
-          <h3>Technologies Used</h3>
+          <h4>Technologies Used</h4>
           <div style={{ marginRight: `8rem` }}>
             <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
             <p style={{ marginLeft: `3rem`}}>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>

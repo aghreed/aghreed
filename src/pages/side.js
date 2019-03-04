@@ -12,7 +12,7 @@ import TBG from "../images/tbg.png"
 const Side = () => (
   <Layout>
     <SEO title="Side" />
-    <div style={{ maxWidth: `1280px`, margin: `0 auto` }}>
+    <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
       <Image3 />
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, color: `${navy}`, fontVariant: `small-caps` }}>on the side</h1>

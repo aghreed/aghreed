@@ -17,8 +17,8 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0, color: `${navy}` }}>
-        {siteTitle}
+      <h1 style={{ margin: 0 }}>
+        <Link to="/" style={{ color: `${navy}` }}>{siteTitle}</Link>
       </h1>
       <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
       <div style={{ display: `flex`, width: `40%`, margin: `0 auto`, justifyContent: `space-evenly` }}>

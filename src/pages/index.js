@@ -41,7 +41,7 @@ const IndexPage = () => (
       </div>
       <div style={{ width: `70%`, height: `1px`, backgroundColor: `${lime}`, margin: `0 auto` }}></div>
       <div style={{ maxWidth: `50%`, margin: `0 auto`, padding: `3rem 0` }}>
-        <h2 style={{ color: `${offWhite}`}}>Side / Community / Fun Work</h2>
+        <h2 style={{ color: `${offWhite}`}}>Side Work</h2>
         <p style={{ color: `${offWhite}` }}>
            I care deeply about the collaborative nature of technology, which is why I frequently attend (and occassionally speak at and volunteer at) meetups, conferences, workshops, and hackathons around the country. I love any excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>

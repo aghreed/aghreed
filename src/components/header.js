@@ -23,8 +23,8 @@ const Header = ({ siteTitle }) => (
       <div style={{ width: `60%`, height: `1px`, backgroundColor: `${navy}`, margin: `1.75rem auto` }}></div>
       <div style={{ display: `flex`, width: `40%`, margin: `0 auto`, justifyContent: `space-evenly` }}>
         <h3><Link to="/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>about</Link></h3>
-        <h3><Link to="/resume" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>resume</Link></h3>
         <h3><Link to="/side" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>side</Link></h3>
+        <h3><Link to="/resume" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>resume</Link></h3>
       </div>
     </div>
   </header>

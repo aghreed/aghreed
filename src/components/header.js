@@ -54,7 +54,7 @@ const Header = ({ siteTitle }) => (
         }
       `}>
         <h3><Link to="/resume/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>resume</Link></h3>
-        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>side work</Link></h3>
+        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline`, wordSpacing: `-2px` }}>side work</Link></h3>
         <h3><Link to="/contact/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>contact</Link></h3>
       </div>
     </div>

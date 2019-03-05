@@ -1,10 +1,61 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+// eslint-disable-next-line
+import { css, jsx } from "@emotion/core";
 
 import Header from "./header"
 import { navy, offWhite, lime } from "./colors";
 import "./layout.css"
+
+import GithubIcon from "../images/github_icon.svg";
+import GithubIconHover from "../images/github_icon_hover.svg";
+import InstagramIcon from "../images/instagram_icon.svg";
+import InstagramIconHover from "../images/instagram_icon_hover.svg";
+
+const footerStyle = css`
+  display: flex;
+  justify-content: space-between;
+  background: ${navy};
+  width: 100%;
+  font-size: 10px;
+  text-align: right;
+  color: ${offWhite};
+  padding-right: 1em;
+  padding-bottom: 1em;
+`;
+
+const githubIconStyle = css`
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url(${GithubIcon});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 500ms linear;
+  margin: 2em 1em;
+
+  &:hover {
+    background-image: url(${GithubIconHover})
+  }
+`;
+
+const instagramIconStyle = css`
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url(${InstagramIcon});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 500ms linear;
+  margin: 2em 1em;
+
+  &:hover {
+    background-image: url(${InstagramIconHover})
+  }
+`;
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,10 +78,17 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          <footer style={{ background: `${navy}`, width: `100%`, fontSize: `10px`, textAlign: `right`, color: `${offWhite}`, paddingRight: `1em`, paddingBottom: `1em` }}>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
+          <footer css={footerStyle}>
+            <div style={{ minWidth: `115px` }}></div>
+            <div style={{ display: `flex` }}>
+              <div css={instagramIconStyle} onClick={() => window.open("https://www.instagram.com/rodneystockings/", "_blank")} />
+              <div css={githubIconStyle} onClick={() => window.open("https://github.com/aghreed", "_blank")} />
+            </div>
+            <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
+            </div>
           </footer>
         </div>
       </>

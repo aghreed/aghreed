@@ -26,7 +26,7 @@ const Contact = () => (
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>contact</h1>
     <div css={headerDividerStyle} />
-
+    {/* form for contacting me goes here... need to get backend email service running */}
   </Layout>
 );
 

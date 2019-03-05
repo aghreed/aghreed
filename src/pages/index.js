@@ -120,9 +120,9 @@ const IndexPage = () => (
         <h2>Contact</h2>
         <p>
           I am currently exploring remote or NYC-based opportunities for employment.
-          If you're hiring — or even just looking for a collaborator — let me know what you have in mind and we will get the conversation going.
+          If you're hiring — or even just looking for a collaborator — let me know a little more about the job and we'll get the conversation rolling.
         </p>
-        <h4 css={h4Style}>Think you might want to work with me?</h4>
+        <h4 css={h4Style}>Want to work with me?</h4>
         <button css={buttonStyle}><Link to="/contact/">Reach Out</Link></button>
       </div>
     </div>

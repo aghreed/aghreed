@@ -50,11 +50,12 @@ const rightSideTextStyle = css`
   margin-right: 3rem;
   transition: width 500ms linear;
   @media (max-width: 960px) {
-    width: 70%;
+    width: 80%;
     margin-bottom: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     justify-self: center;
+    text-align: left;
   }
 `;
 
@@ -67,10 +68,10 @@ const leftSideTextStyle = css`
   margin-right: 1rem;
   transition: width 500ms linear;
   @media (max-width: 960px) {
-    width: 70%;
+    width: 80%;
     margin-bottom: 1.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: left;
     justify-self: center;
   }
@@ -153,7 +154,7 @@ const Side = () => (
         <div css={leftSideTextStyle}>
           <h2>Talks</h2>
           <p>
-            I’ve spoke at multiple meetups and events, including at Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
+            I’ve spoke at multiple meetups and events, including Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
           </p>
           <p>
           Thanks to the good folks at <a style={{ color: `${navy}`, textDecoration: `underline` }} href="http://techomaha.com" target="_blank" rel="noopener noreferrer">TechOmaha</a>,

@@ -45,9 +45,16 @@ const companyNameAndTitleStyle = css`
 const companyTitleStyle = css`
   margin-left: 0.5rem;
   margin-bottom: 0.25rem;
+  font-style: italic;
   @media (max-width: 850px) {
     margin-left: 0;
   }
+`;
+
+const companyDurationStyle = css`
+  margin-right: 2rem;
+  margin-bottom: 0.25rem;
+  font-style: italic;
 `;
 
 const rolesTextStyle = css`
@@ -69,12 +76,29 @@ const roleListStyle = css`
   @media (max-width: 850px) {
     margin: 0 3rem;
   }
+
+  h4 {
+    font-weight: 600;
+  }
 `;
 
 const techListStyle = css`
   margin-right: 8rem;
   @media (max-width: 850px) {
     margin-right: 3rem;
+  }
+
+  h4 {
+    font-weight: 600;
+  }
+
+  h5 {
+    margin: 0.5rem 2rem;
+    text-decoration: underline;
+  }
+
+  p {
+    margin-left: 3rem;
   }
 `;
 
@@ -97,7 +121,7 @@ const Resume = () => (
               </h2>
               <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
-            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>April 2017 - December 2018</h4>
+            <h4 css={companyDurationStyle}>April 2017 - December 2018</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
@@ -116,16 +140,16 @@ const Resume = () => (
         <div css={techTextStyle}>
           <h4>Technologies Used</h4>
           <div css={techListStyle}>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
-            <p style={{ marginLeft: `3rem`}}>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
-            <p style={{ marginLeft: `3rem`}}>Groovy, Spring Boot, Zuul, Node, Hapi</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Database</h5>
-            <p style={{ marginLeft: `3rem`}}>SQL/SQLite, MongoDB</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Architectural Patterns</h5>
-            <p style={{ marginLeft: `3rem`}}>SPA, REST, OAuth, Monorepos, Microservices, Microclients</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Infrastructure / DevOps</h5>
-            <p style={{ marginLeft: `3rem`}}>Git, npm, yarn, Artifactory, Docker, Jenkins, JIRA, BitBucket</p>
+            <h5>Client</h5>
+            <p>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
+            <h5>Server</h5>
+            <p>Groovy, Spring Boot, Zuul, Node, Hapi</p>
+            <h5>Database</h5>
+            <p>SQL/SQLite, MongoDB</p>
+            <h5>Architectural Patterns</h5>
+            <p>SPA, REST, OAuth, Monorepos, Microservices, Microclients</p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Git, npm, yarn, Artifactory, Docker, Jenkins, JIRA, BitBucket</p>
           </div>
         </div>
       </div>
@@ -139,7 +163,7 @@ const Resume = () => (
               <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
               <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
-            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>January 2015 - December 2016</h4>
+            <h4 css={companyDurationStyle}>January 2015 - December 2016</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
@@ -158,14 +182,14 @@ const Resume = () => (
           </ul>
           <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
           <div css={techListStyle}>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
-            <p style={{ marginLeft: `3rem`}}>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
-            <p style={{ marginLeft: `3rem`}}>Node, Hapi, Apache</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Architectural Patterns</h5>
-            <p style={{ marginLeft: `3rem`}}>SPA, REST, OAuth, Microservices, Microclients</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Infrastructure / DevOps</h5>
-            <p style={{ marginLeft: `3rem`}}>Jenkins, npm, yarn, TeamCity, JIRA, BitBucket, GitLab</p>
+            <h5>Client</h5>
+            <p>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
+            <h5>Server</h5>
+            <p>Node, Hapi, Apache</p>
+            <h5>Architectural Patterns</h5>
+            <p>SPA, REST, OAuth, Microservices, Microclients</p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Jenkins, npm, yarn, TeamCity, JIRA, BitBucket, GitLab</p>
           </div>
           <h3>TD Ameritrade</h3>
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
@@ -180,20 +204,20 @@ const Resume = () => (
           </ul>
           <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
           <div css={techListStyle}>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
-            <p style={{ marginLeft: `3rem`}}>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
-            <p style={{ marginLeft: `3rem`}}>Node, Express, Hapi</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Architectural Patterns</h5>
-            <p style={{ marginLeft: `3rem`}}>SPA, REST</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Infrastructure / DevOps</h5>
-            <p style={{ marginLeft: `3rem`}}>Git, npm, TeamCity, JIRA, BitBucket</p>
+            <h5>Client</h5>
+            <p>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
+            <h5>Server</h5>
+            <p>Node, Express, Hapi</p>
+            <h5>Architectural Patterns</h5>
+            <p>SPA, REST</p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Git, npm, TeamCity, JIRA, BitBucket</p>
           </div>
         </div>
       </div>
     </section>
     {/* Aviture, Inc */}
-    <section style={{ padding: `0.25rem 0 3rem`, color: `${offWhite}`, background: `${navy}` }}>
+    <section style={{ padding: `0.25rem 0 10rem`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
@@ -201,7 +225,7 @@ const Resume = () => (
               <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
               <h4 css={companyTitleStyle}>Software Developer</h4>
             </div>
-            <h4 style={{ marginRight: `2rem`, marginBottom: `0.25rem` }}>February 2013 - January 2015</h4>
+            <h4 css={companyDurationStyle}>February 2013 - January 2015</h4>
           </div>
           <h4>Omaha, NE</h4>
         </div>
@@ -218,16 +242,16 @@ const Resume = () => (
         <div css={techTextStyle}>
           <h4>Technologies Used</h4>
           <div css={techListStyle}>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Client</h5>
-            <p style={{ marginLeft: `3rem`}}>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Server</h5>
-            <p style={{ marginLeft: `3rem`}}>Java, Spring, Node, Express</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Database</h5>
-            <p style={{ marginLeft: `3rem`}}>SQL, MongoDB</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Architectural Patterns</h5>
-            <p style={{ marginLeft: `3rem`}}>SPA, REST</p>
-            <h5 style={{ margin: `0.5rem 2rem`}}>Infrastructure / DevOps</h5>
-            <p style={{ marginLeft: `3rem`}}>Git, SVN, npm, bower, Jenkins, JIRA, Pivotal Tracker, BitBucket, Basecamp</p>
+            <h5>Client</h5>
+            <p>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, PhoneGap, Ionic, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>
+            <h5>Server</h5>
+            <p>Java, Spring, Node, Express</p>
+            <h5>Database</h5>
+            <p>SQL, MongoDB</p>
+            <h5>Architectural Patterns</h5>
+            <p>SPA, REST</p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Git, SVN, npm, bower, Jenkins, JIRA, Pivotal Tracker, BitBucket, Basecamp</p>
           </div>
         </div>
       </div>

@@ -14,6 +14,14 @@ const h2Style = css`
   letter-spacing: 0px;
 `;
 
+const h4Style = css`
+  letter-spacing: 0.15em;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin: 1.5rem 0;
+`;
+
 const limeDividerStyle = css`
   width: 60%;
   height: 1px;
@@ -32,6 +40,34 @@ const textBlockStyle = css`
   color: ${offWhite};
   @media (max-width: 550px) {
     width: 70%;
+  }
+  p {
+    text-align: justify;
+  }
+`;
+
+const buttonStyle = css`
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background: ${navy};
+  border-top: 1px solid ${lime};
+  border-bottom: 1px solid ${lime};
+  cursor: pointer;
+
+  a {
+    color: ${offWhite};
+    font-weight: 400;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &:hover {
+    background: ${lime};
+
+    a {
+      color: ${navy};
+    }
   }
 `;
 
@@ -55,25 +91,39 @@ const IndexPage = () => (
       </div>
       <div css={limeDividerStyle} />
       <div css={textBlockStyle}>
-        <h2>Professional</h2>
+        <h2>Professional Work</h2>
         <p>
-        Throughout my six years working in the field, I've had the opportunity to create custom software in the startup, commercial and government domains. I value trust, quality communication, and a collaborative and supportive work environment. I believe in people over process and
-        enjoy working closely with clients to best understand their needs. Even more, I enjoy working closely with co-workers to deliver quality, tested software solutions specifically tailored for the needs of the client. I've worked with talented collaborators to successfully
-        deliver projects spanning a number of industries including insurance, finance, logistics, and communications
+          Throughout my six years working in the field, I've had the opportunity to create custom software in the startup, commercial and government domains.
+          I value trust, quality communication, and a collaborative and supportive work environment.
+          I enjoy working closely with clients to best understand their needs.
         </p>
+        <h4 css={h4Style}> I believe in people over process. </h4>
         <p>
-          Head to my <Link to="/resume/" style={{ color: `${lime}` }}>resume</Link> for a more in-depth look at my professional experience.
+          I enjoy working together with co-workers to deliver quality, tested software solutions specifically tailored for the needs of the client.
         </p>
+        <button css={buttonStyle}><Link to="/resume/">View Resume</Link></button>
       </div>
       <div css={limeDividerStyle} />
       <div css={textBlockStyle}>
-        <h2>Side</h2>
+        <h2>Side Work</h2>
         <p>
-           For me, side work is not just about doing a favor for a friend or pursuing a passion project. It’s about meeting people, making new connections and challenging myself. I care deeply about the collaborative nature of technology, which is why you'll often find me at meetups, conferences, and workshops around the country. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
+           For me, side work is not just about doing a favor for a friend or pursuing a passion project. It’s about meeting people, making new connections and challenging myself.
         </p>
+        <h4 css={h4Style}> I care deeply about the collaborative nature of technology. </h4>
         <p>
-          Check out my<Link to="/side/" style={{ color: `${lime}` }}> on the side</Link> page for more on the outside of nine-to-five stuff.
+           Growth rarely happens in isolation — which is why you'll often find me at conferences, meetups, and workshops around the country. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
+        <button css={buttonStyle}><Link to="/side/">View Outside 9-to-5</Link></button>
+      </div>
+      <div css={limeDividerStyle} />
+      <div css={textBlockStyle} style={{ paddingBottom: `7.5rem` }}>
+        <h2>Contact</h2>
+        <p>
+          I am currently exploring remote or NYC-based opportunities for employment.
+          If you're hiring — or even just looking for a collaborator — let me know what you have in mind and we will get the conversation going.
+        </p>
+        <h4 css={h4Style}>Think you might want to work with me?</h4>
+        <button css={buttonStyle}><Link to="/contact/">Reach Out</Link></button>
       </div>
     </div>
   </Layout>

@@ -22,7 +22,9 @@ const Header = ({ siteTitle }) => (
       <h1 css={css`
         margin: 0;
       `}>
-        <Link to="/" style={{ color: `${navy}` }}>{siteTitle}</Link>
+        <Link to="/" css={css` color: ${navy}; &:hover { text-decoration: none; }`} activeStyle={{ textDecoration: `none` }}>
+          {siteTitle}
+        </Link>
       </h1>
       <div css={css`
         width: 60%;
@@ -51,9 +53,9 @@ const Header = ({ siteTitle }) => (
           width: 80%;
         }
       `}>
-        <h3><Link to="/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>about</Link></h3>
-        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps`, wordSpacing: `-2px` }} activeStyle={{ textDecoration: `underline` }}>on the side</Link></h3>
         <h3><Link to="/resume/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>resume</Link></h3>
+        <h3><Link to="/side/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>side work</Link></h3>
+        <h3><Link to="/contact/" style={{ color: `${navy}`, fontVariant: `small-caps` }} activeStyle={{ textDecoration: `underline` }}>contact</Link></h3>
       </div>
     </div>
   </header>

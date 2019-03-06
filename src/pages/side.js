@@ -2,13 +2,13 @@ import React from "react"
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/core"
 import Image3 from "../components/image3"
+import YGImage from "../components/yonderguide-image"
+import TBGImage from "../components/tbg-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { navy, lime, offWhite } from "../components/colors"
 
 import WhitneyPortfolioGIF from "../images/whitneyportfolio.gif"
-import YonderGuide from "../images/yonderguide.png"
-import TBG from "../images/tbg.png"
 
 const headerDividerStyle = css`
   width: 60%;
@@ -107,7 +107,9 @@ const Side = () => (
     <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
       <div css={goofySectionContainerStyle}>
         <div css={leftSideImageStyle}>
-          <div style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${YonderGuide})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
+          <div style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto` }}>
+            <YGImage />
+          </div>
         </div>
         <div css={rightSideTextStyle}>
           <h2><a style={{ color: `${navy}`}} href="https://github.com/aghreed/yonder.guide" target="_blank" rel="noopener noreferrer">Yonder.Guide</a></h2>
@@ -137,7 +139,9 @@ const Side = () => (
     <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
       <div css={goofySectionContainerStyle}>
         <div style={{ justifySelf: `end`, width: `100%`, marginRight: `1rem` }}>
-          <div onClick={() => window.open("http://www.tbgco.com", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${TBG})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
+          <div onClick={() => window.open("http://www.tbgco.com", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`}}>
+            <TBGImage />
+          </div>
         </div>
         <div css={rightSideTextStyle}>
           <h2><a href="http://www.tbgco.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>The Benefit Group</a></h2>

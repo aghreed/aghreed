@@ -99,7 +99,7 @@ const IndexPage = () => (
         </p>
         <h4 css={h4Style}> I believe in people over process. </h4>
         <p>
-          I enjoy working together with co-workers to deliver quality, tested software solutions specifically tailored for the needs of the client.
+          Working with others to deliver well-tested, quality software that's specifically tailored for the needs of the client, is where I thrive.
         </p>
         <button css={buttonStyle}><Link to="/resume/">View Resume</Link></button>
       </div>
@@ -119,7 +119,7 @@ const IndexPage = () => (
       <div css={textBlockStyle} style={{ paddingBottom: `7.5rem` }}>
         <h2>Contact</h2>
         <p>
-          I am currently exploring remote or NYC-based opportunities for employment.
+          I am currently exploring remote or NYC-based employment opportunities.
           If you're hiring — or looking for a collaborator — reach out to me with some details about the job to start the conversation.
         </p>
         <h4 css={h4Style}>Want to work with me?</h4>

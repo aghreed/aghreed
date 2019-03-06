@@ -10,8 +10,6 @@ import "./layout.css"
 
 import GithubIcon from "../images/github_icon.svg";
 import GithubIconHover from "../images/github_icon_hover.svg";
-import InstagramIcon from "../images/instagram_icon.svg";
-import InstagramIconHover from "../images/instagram_icon_hover.svg";
 
 const footerStyle = css`
   display: flex;
@@ -39,22 +37,6 @@ const githubIconStyle = css`
   }
 `;
 
-const instagramIconStyle = css`
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  background-image: url(${InstagramIcon});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  transition: background-image 300ms linear;
-  margin: 2em 1em;
-
-  &:hover {
-    background-image: url(${InstagramIconHover})
-  }
-`;
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -78,10 +60,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer css={footerStyle}>
             <div style={{ minWidth: `115px` }}></div>
-            <div style={{ display: `flex` }}>
-              <div css={instagramIconStyle} onClick={() => window.open("https://www.instagram.com/rodneystockings/", "_blank")} />
-              <div css={githubIconStyle} onClick={() => window.open("https://github.com/aghreed", "_blank")} />
-            </div>
+            <div css={githubIconStyle} onClick={() => window.open("https://github.com/aghreed", "_blank")} />
             <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
               <div style={{ padding: `0 1em 1em 0` }}>
                 © {new Date().getFullYear()}, Built with

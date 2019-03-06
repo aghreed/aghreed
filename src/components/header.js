@@ -43,11 +43,10 @@ const Header = ({ siteTitle }) => (
         display: flex;
         width: 40%;
         margin: 0 auto;
-        justify-content: space-evenly;
+        justify-content: space-between;
         transition: width 500ms linear;
         @media (max-width: 850px) {
           width: 60%;
-          justify-content: space-around;
         }
         @media (max-width: 550px) {
           width: 80%;

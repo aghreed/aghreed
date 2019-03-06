@@ -85,8 +85,9 @@ const IndexPage = () => (
       <div css={limeDividerStyle} />
       <div css={textBlockStyle}>
         <p style={{ color: `${offWhite}` }}>
-          I'm a software developer based in Brooklyn, New York by way of Omaha, Nebraska and Manhattan, Kansas. I'm passionate about building intuitive and useful applications that focus on human experiences. I like using technology purposefully, not just for technology's sake.
+          I'm a software developer based in Brooklyn, New York by way of Omaha, Nebraska and Manhattan, Kansas. I'm passionate about building intuitive and useful applications that focus on human experiences.
         </p>
+        <h4 css={h4Style}>I like using technology purposefully, not just for technology's sake.</h4>
       </div>
       <div css={limeDividerStyle} />
       <div css={textBlockStyle}>
@@ -122,7 +123,7 @@ const IndexPage = () => (
           If you're hiring — or even just looking for a collaborator — let me know a little more about the job and we'll get the conversation rolling.
         </p>
         <h4 css={h4Style}>Want to work with me?</h4>
-        <button css={buttonStyle}><Link to="/contact/">Reach Out</Link></button>
+        <button css={buttonStyle}><a href="mailto:aghreed@gmail.com?subject=[something that'll catch my eye]&body=[some more detail, a little about you and then a call to action]" target="_blank">Reach Out</a></button>
       </div>
     </div>
   </Layout>

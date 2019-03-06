@@ -21,8 +21,6 @@ const footerStyle = css`
   font-size: 10px;
   text-align: right;
   color: ${offWhite};
-  padding-right: 1em;
-  padding-bottom: 1em;
 `;
 
 const githubIconStyle = css`
@@ -33,7 +31,7 @@ const githubIconStyle = css`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  transition: background-image 500ms linear;
+  transition: background-image 300ms linear;
   margin: 2em 1em;
 
   &:hover {
@@ -49,7 +47,7 @@ const instagramIconStyle = css`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  transition: background-image 500ms linear;
+  transition: background-image 300ms linear;
   margin: 2em 1em;
 
   &:hover {
@@ -85,9 +83,11 @@ const Layout = ({ children }) => (
               <div css={githubIconStyle} onClick={() => window.open("https://github.com/aghreed", "_blank")} />
             </div>
             <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
-              © {new Date().getFullYear()}, Built with
-              {` `}
-              <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
+              <div style={{ padding: `0 1em 1em 0` }}>
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
+              </div>
             </div>
           </footer>
         </div>

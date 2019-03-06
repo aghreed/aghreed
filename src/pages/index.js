@@ -50,8 +50,7 @@ const buttonStyle = css`
   margin-top: 1rem;
   padding: 1rem 2rem;
   background: ${navy};
-  border-top: 1px solid ${lime};
-  border-bottom: 1px solid ${lime};
+  border: 1px solid ${lime};
   cursor: pointer;
 
   a {

@@ -10,7 +10,7 @@ import { lime, navy, offWhite } from "../components/colors";
 const h2Style = css`
   color: ${offWhite};
   margin-bottom: 0.5em;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 0px;
 `;
 
@@ -34,7 +34,7 @@ const limeDividerStyle = css`
 `;
 
 const textBlockStyle = css`
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
   padding: 3rem 0;
   color: ${offWhite};

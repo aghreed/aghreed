@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import { navy, lime, offWhite } from "../components/colors"
 
 import WhitneyPortfolioGIF from "../images/whitneyportfolio.gif"
+import ControllerAsSyntaxGIF from "../images/controller-as-syntax.gif"
 
 const headerDividerStyle = css`
   width: 60%;
@@ -104,7 +105,7 @@ const Side = () => (
     <h1 style={{ textAlign: `center`, marginTop: `3em`, color: `${navy}`, fontVariant: `small-caps` }}>on the side</h1>
     <div css={headerDividerStyle} ></div>
     {/* Yonder.Guide */}
-    <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
+    <section style={{ padding: `4rem 0`, background: `${offWhite}`, color: `${navy}` }}>
       <div css={goofySectionContainerStyle}>
         <div css={leftSideImageStyle}>
           <div style={{ width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto` }}>
@@ -138,7 +139,7 @@ const Side = () => (
     {/* TBG site */}
     <section style={{ padding: `5rem 0`, background: `${offWhite}`, color: `${navy}` }}>
       <div css={goofySectionContainerStyle}>
-        <div style={{ justifySelf: `end`, width: `100%`, marginRight: `1rem` }}>
+        <div css={leftSideImageStyle}>
           <div onClick={() => window.open("http://www.tbgco.com", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`}}>
             <TBGImage />
           </div>
@@ -158,29 +159,16 @@ const Side = () => (
         <div css={leftSideTextStyle}>
           <h2>Talks</h2>
           <p>
-            I’ve spoke at multiple meetups and events, including Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
+            I’ve given talks at multiple meetups and events, including Omaha Mobile Meetup, BarCamp Omaha, and ng-nebraska, a meetup for AngularJS developers.
           </p>
           <p>
-          Thanks to the good folks at <a style={{ color: `${navy}`, textDecoration: `underline` }} href="http://techomaha.com" target="_blank" rel="noopener noreferrer">TechOmaha</a>,
+          Thanks to the good folks at <a style={{ color: `${navy}`, textDecoration: `underline` }} href="http://techomaha.com/2015/11/alex-reed-controller-as/" target="_blank" rel="noopener noreferrer">TechOmaha</a>,
            you can watch my 2015 talk for ng-nebraska about "controllerAs" syntax, why you should be using it, and something about soup and stew.
            The source code of the presentation is also available on <a style={{ color: `${navy}`, textDecoration: `underline`}} href="https://github.com/aghreed/controllerAs-syntax-slides">Github</a>.
           </p>
         </div>
-        <div css={css`
-          justify-self: start;
-          align-self: stretch;
-          margin: 0 auto;
-          padding-left: 1rem;
-          min-width: 560px;
-          min-height: 315px;
-          @media (max-width: 960px) {
-            justify-self: center;
-            padding-left: 0;
-            min-width: 300px;
-            min-height: 175px;
-          }
-          `}>
-          <iframe title="controllerAs-syntax-talk" width="100%" height="100%" src="https://www.youtube.com/embed/QOiqPLL2Tec" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        <div css={rightSideImageStyle}>
+          <div onClick={() => window.open("https://youtu.be/QOiqPLL2Tec", "_blank")} style={{ cursor: `pointer`, width: `100%`, height: `100%`, minHeight: `315px`, margin: `0 auto`, backgroundImage: `url(${ControllerAsSyntaxGIF})`, backgroundSize: `contain`, backgroundRepeat: `no-repeat`, backgroundPosition: `center` }} />
         </div>
       </div>
     </section>

@@ -19,7 +19,7 @@ const headerDividerStyle = css`
 `;
 
 const companyHeaderContainerStyle = css`
-  margin: 4.75rem 4rem 1rem;
+  margin: 0rem 4rem 1rem;
   @media (max-width: 850px) {
     margin: 2.5rem 1.5rem 1rem;
   }
@@ -111,7 +111,7 @@ const Resume = () => (
     <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
     <div css={headerDividerStyle} />
     {/* Flyover Technical */}
-    <section style={{ padding: `4rem 0 3rem`, color: `${navy}`, background: `${offWhite}` }}>
+    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
@@ -155,7 +155,7 @@ const Resume = () => (
       </div>
     </section>
     {/* Object Partners, Inc */}
-    <section style={{ padding: `0.25rem 0 3rem`, color: `${navy}`, background: `${lime}` }}>
+    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${lime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
@@ -217,7 +217,7 @@ const Resume = () => (
       </div>
     </section>
     {/* Aviture, Inc */}
-    <section style={{ padding: `0.25rem 0 10rem`, color: `${offWhite}`, background: `${navy}` }}>
+    <section style={{ padding: `4rem 0 8rem`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>

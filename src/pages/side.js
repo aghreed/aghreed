@@ -6,7 +6,7 @@ import YGImage from "../components/yonderguide-image"
 import TBGImage from "../components/tbg-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { navy, lime, offWhite } from "../components/colors"
+import { navy, offWhite, darkLime } from "../components/colors"
 
 import WhitneyPortfolioGIF from "../images/whitneyportfolio.gif"
 import ControllerAsSyntaxGIF from "../images/controller-as-syntax.gif"
@@ -154,7 +154,7 @@ const Side = () => (
       </div>
     </section>
     {/* Angular controllerAs syntax talk */}
-    <section style={{ padding: `5rem 0`, background: `${lime}`, color: `${navy}` }}>
+    <section style={{ padding: `5rem 0`, background: `${darkLime}`, color: `${navy}` }}>
       <div css={sectionContainerStyle}>
         <div css={leftSideTextStyle}>
           <h2>Talks</h2>

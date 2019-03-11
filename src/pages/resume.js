@@ -5,7 +5,7 @@ import Image2 from "../components/image2"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { navy, offWhite, lime } from "../components/colors";
+import { navy, offWhite, darkLime } from "../components/colors";
 
 const headerDividerStyle = css`
   width: 60%;
@@ -155,7 +155,7 @@ const Resume = () => (
       </div>
     </section>
     {/* Object Partners, Inc */}
-    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${lime}` }}>
+    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>

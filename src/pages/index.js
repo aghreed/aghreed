@@ -20,6 +20,7 @@ const h4Style = css`
   font-style: italic;
   text-align: center;
   margin: 1.5rem 0;
+  font-family: "Source Sans", sans-serif;
 `;
 
 const limeDividerStyle = css`
@@ -113,7 +114,7 @@ const IndexPage = () => (
         <p>
            Growth rarely happens in isolation — which is why you'll often find me at conferences, meetups, and workshops around the country. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
-        <button css={buttonStyle}><Link to="/side/">View Outside 9-to-5</Link></button>
+        <button css={buttonStyle}><Link to="/side/">View Side Work</Link></button>
       </div>
       <div css={limeDividerStyle} />
       <div css={textBlockStyle} style={{ paddingBottom: `7.5rem` }}>

@@ -105,7 +105,7 @@ const IndexPage = () => (
         <button css={buttonStyle}><Link to="/resume/">View Resume</Link></button>
       </div>
       <div css={limeDividerStyle} />
-      <div css={textBlockStyle}>
+      <div css={textBlockStyle} style={{ paddingBottom: `7.5em` }}>
         <h2>Side Work</h2>
         <p>
            For me, side work is not just about doing a favor for a friend or pursuing a passion project. It’s about meeting people, making new connections and challenging myself.
@@ -115,16 +115,6 @@ const IndexPage = () => (
            Growth rarely happens in isolation — which is why you'll often find me at conferences, meetups, and workshops around the country. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
         <button css={buttonStyle}><Link to="/side/">View Side Work</Link></button>
-      </div>
-      <div css={limeDividerStyle} />
-      <div css={textBlockStyle} style={{ paddingBottom: `7.5rem` }}>
-        <h2>Contact</h2>
-        <p>
-          I am currently exploring remote or NYC-based employment opportunities.
-          If you're hiring — or looking for a collaborator — reach out to me with some details about the job to start the conversation.
-        </p>
-        <h4 css={h4Style}>Want to work with me?</h4>
-        <button css={buttonStyle}><a href="mailto:aghreed@gmail.com?subject=[something that'll catch my eye]&body=[some more detail, a little about you and then a call to action]" target="_blank" rel="noopener noreferrer">Reach Out</a></button>
       </div>
     </div>
   </Layout>

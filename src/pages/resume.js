@@ -110,8 +110,58 @@ const Resume = () => (
     </div>
     <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
     <div css={headerDividerStyle} />
-    {/* Flyover Technical */}
+    {/* Feather */}
     <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}>
+      <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
+        <div css={companyHeaderContainerStyle}>
+          <div css={companyHeaderStyle}>
+            <div css={companyNameAndTitleStyle}>
+              <h2 style={{ marginBottom: `0.25rem` }}>
+                <a href="https://www.livefeather.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Feather</a>
+              </h2>
+              <h4 css={companyTitleStyle}>Senior Engineer II</h4>
+            </div>
+            <h4 css={companyDurationStyle}>April 2019 - Current</h4>
+          </div>
+          <h4>New York, NY</h4>
+        </div>
+        <div css={rolesTextStyle}>
+          <h4>Roles and Responsibilities</h4>
+          <ul css={roleListStyle}>
+            <li>Cultivate a collaborative, empathetic, and engaging engineering culture</li>
+            <li>Serve as lead engineer of the team focused on supporting the e-commerce needs of the company</li>
+            <li>Advocate for and actively particpate in team Agile/Scrum practices</li>
+            <li>Collaborate closely with fellow engineers, product managers, designers as well as quality and data analysts</li>
+            <li>Lead front-end development and organize company best practices</li>
+            <li>Design custom REST APIs and lead the development of data services</li>
+            <li>Model schema changes and create and manaage migrations to enact them</li>
+            <li>Partner with product managers to provide technical perspective on roadmaps and stakeholder requests</li>
+            <li>Brainstorm with designers to develop as design system of resuable UI components</li>
+            <li>Support QA in testing smarter, not harder through automating tests and building confidence in tools</li>
+            <li>Strategize with the Data team to capture insightful analytics to enable data driven decisions</li>
+            <li>Build trust and foster relationships directly with stakeholders</li>
+            <li>Maintain and support multiple internal and external applications through multiple iterations and release cycles</li>
+          </ul>
+        </div>
+        <div css={techTextStyle}>
+          <h4>Technologies Used</h4>
+          <div css={techListStyle}>
+            <h5>Client</h5>
+            <p>Typescript, React, Redux, Webpack, Jest + Enzyme, Cypress, Segment, Contentful</p>
+            <h5>Server</h5>
+            <p>Typescript, Node, Express, TypeORM, NestJS</p>
+            <h5>Database</h5>
+            <p>MySQL, Postgres</p>
+            <h5>Architectural Patterns</h5>
+            <p>SPA, REST, OAuth, Monorepos, Microservices</p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Git, npm, Docker, CircleCI, AWS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* Flyover Technical */}
+    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
@@ -155,12 +205,12 @@ const Resume = () => (
       </div>
     </section>
     {/* Object Partners, Inc */}
-    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}>
+    <section style={{ padding: `4rem 0`, color: `${offWhite}`, background: `${navy}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
-              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}` }}>Object Partners, Inc</a></h2>
+              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}` }}>Object Partners, Inc</a></h2>
               <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
             <h4 css={companyDurationStyle}>January 2015 - December 2016</h4>
@@ -217,12 +267,12 @@ const Resume = () => (
       </div>
     </section>
     {/* Aviture, Inc */}
-    <section style={{ padding: `4rem 0 8rem`, color: `${offWhite}`, background: `${navy}` }}>
+    <section style={{ padding: `4rem 0 8rem`, color: `${navy}`, background: `${offWhite}` }}>
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
-              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}`}}>Aviture, Inc</a></h2>
+              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Aviture, Inc</a></h2>
               <h4 css={companyTitleStyle}>Software Developer</h4>
             </div>
             <h4 css={companyDurationStyle}>February 2013 - January 2015</h4>

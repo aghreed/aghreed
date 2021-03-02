@@ -94,13 +94,13 @@ const IndexPage = () => (
       <div css={textBlockStyle}>
         <h2>Professional Work</h2>
         <p>
-          Throughout my six years working in the field, I've had the opportunity to create custom software in the startup, commercial and government domains.
+          Throughout my eight years working in the field, I've had the opportunity to create custom software in the startup, commercial and government domains.
           I value trust, quality communication, and a collaborative and supportive work environment.
           I enjoy working closely with clients to best understand their needs.
         </p>
         <h4 css={h4Style}> I believe in people over process. </h4>
         <p>
-          Working with others to deliver well-tested, quality software that's specifically tailored for the needs of the client, is where I thrive.
+          Working closely with others is the only way to deliver well-tested, quality software tailored for the needs of the client.
         </p>
         <button css={buttonStyle}><Link to="/resume/">View Resume</Link></button>
       </div>
@@ -112,7 +112,7 @@ const IndexPage = () => (
         </p>
         <h4 css={h4Style}> I care deeply about the collaborative nature of technology. </h4>
         <p>
-           Growth rarely happens in isolation — which is why you'll often find me at conferences, meetups, and workshops around the country. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
+           Growth rarely happens in isolation — which is why, in pre-pandemic times, you could often find me at conferences, meetups, or workshops. I love an excuse to experiment with a technology I'm unfamiliar with as much as I enjoy sharing something I'm well-versed in.
         </p>
         <button css={buttonStyle}><Link to="/side/">View Side Work</Link></button>
       </div>

@@ -129,15 +129,15 @@ const Resume = () => (
           <h4>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
             <li>Cultivate a collaborative, empathetic, and engaging engineering culture</li>
-            <li>Serve as lead engineer of the team focused on supporting the e-commerce needs of the company</li>
             <li>Advocate for and actively particpate in team Agile/Scrum practices</li>
+            <li>Serve as lead engineer of the team focused on supporting the e-commerce needs of the company</li>
             <li>Collaborate closely with fellow engineers, product managers, designers as well as quality and data analysts</li>
             <li>Lead front-end development and organize company best practices</li>
             <li>Design custom REST APIs and lead the development of data services</li>
-            <li>Model schema changes and create and manaage migrations to enact them</li>
-            <li>Partner with product managers to provide technical perspective on roadmaps and stakeholder requests</li>
-            <li>Brainstorm with designers to develop as design system of resuable UI components</li>
-            <li>Support QA in testing smarter, not harder through automating tests and building confidence in tools</li>
+            <li>Model schema changes and create and manage migrations to enact them</li>
+            <li>Partner with product managers to provide technical perspective on roadmaps and stakeholder requests alike</li>
+            <li>Brainstorm with designers to develop a design system of resuable UI components</li>
+            <li>Support QA in testing smarter through automating tests and building confidence in tools</li>
             <li>Strategize with the Data team to capture insightful analytics to enable data driven decisions</li>
             <li>Build trust and foster relationships directly with stakeholders</li>
             <li>Maintain and support multiple internal and external applications through multiple iterations and release cycles</li>

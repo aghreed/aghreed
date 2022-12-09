@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby";
 // eslint-disable-next-line
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
@@ -86,7 +86,7 @@ const IndexPage = () => (
       <div css={limeDividerStyle} />
       <div css={textBlockStyle}>
         <p style={{ color: `${offWhite}` }}>
-          I'm a software developer based in Brooklyn, New York by way of Omaha, Nebraska and Manhattan, Kansas. I'm passionate about building intuitive and useful applications that focus on human experiences.
+          I'm a software developer based in Queens, New York by way of Omaha, Nebraska and Manhattan, Kansas. I'm passionate about building intuitive and useful applications that focus on human experiences.
         </p>
         <h4 css={h4Style}>I like using technology purposefully, not just for technology's sake.</h4>
       </div>

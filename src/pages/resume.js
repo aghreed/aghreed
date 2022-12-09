@@ -1,6 +1,6 @@
 import React from "react"
 // eslint-disable-next-line
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 import Image2 from "../components/image2"
 
 import Layout from "../components/layout"

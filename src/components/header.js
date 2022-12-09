@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 // eslint-disable-next-line
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 
 const navy = `#1B3C59`;
 

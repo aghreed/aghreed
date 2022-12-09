@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 // eslint-disable-next-line
-import { css, jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/react";
 
 import Header from "./header"
 import { navy, offWhite, lime } from "./colors";
@@ -60,12 +60,12 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <footer css={footerStyle}>
             <div style={{ minWidth: `115px` }}></div>
-            <div css={githubIconStyle} onClick={() => window.open("https://github.com/aghreed", "_blank")} />
+            <a css={githubIconStyle} href="https://github.com/aghreed" target="_blank" />
             <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
               <div style={{ padding: `0 1em 1em 0` }}>
                 © {new Date().getFullYear()}, Built with
                 {` `}
-                <a href="https://www.gatsbyjs.org" style={{ color: `${lime}`}}>Gatsby</a>
+                <a href="https://www.gatsbyjs.com" style={{ color: `${lime}`}}>Gatsby</a>
               </div>
             </div>
           </footer>

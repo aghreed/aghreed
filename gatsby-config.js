@@ -5,7 +5,7 @@ module.exports = {
     author: `@aghreed`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,7 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
-        autoLabel: process.env.NODE_ENV !== 'production',
+        sourceMap: true,
+        autoLabel: "dev-only",
         labelFormat: "[local]",
         cssPropOptimization: true
       }

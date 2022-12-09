@@ -1,6 +1,6 @@
 import React from "react"
 // eslint-disable-next-line
-import { css, jsx } from "@emotion/core"
+import { css, jsx } from "@emotion/react"
 import Image3 from "../components/image3"
 import YGImage from "../components/yonderguide-image"
 import TBGImage from "../components/tbg-image"
@@ -121,7 +121,7 @@ const Side = () => (
         </div>
       </div>
     </section>
-    {/* Whiteny's site */}
+    {/* Whitney's site */}
     <section style={{ padding: `5rem 0`, background: `${navy}`, color: `${offWhite}` }}>
       <div css={sectionContainerStyle}>
         <div css={leftSideTextStyle}>

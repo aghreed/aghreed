@@ -1,10 +1,11 @@
 import React from "react";
+import { graphql } from "gatsby";
+import { getImage, GatsbyImage } from "gatsby-plugin-image";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
-import Image2 from "../components/image2";
 
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import { navy, offWhite, darkLime } from "../components/colors";
 
 const headerDividerStyle = css`
@@ -102,11 +103,10 @@ const techListStyle = css`
   }
 `;
 
-const Resume = () => (
+const Resume = ({ data }) => (
   <Layout>
-    <SEO title="Resume" />
     <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
-      <Image2 />
+      <GatsbyImage image={getImage(data.file)} />
     </div>
     <h1
       style={{
@@ -454,3 +454,17 @@ const Resume = () => (
 );
 
 export default Resume;
+
+export function Head() {
+  return <Seo title="Resume" />;
+}
+
+export const query = graphql`
+  query ResumeImage {
+    file(relativePath: { eq: "reed-portrait-2.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH)
+      }
+    }
+  }
+`;

@@ -5,21 +5,21 @@ module.exports = {
     author: `@aghreed`,
   },
   plugins: [
-    // `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
+        name: `file`,
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `aghreed portfolio`,
+        short_name: `aghreed`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

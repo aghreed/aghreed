@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
 
@@ -37,49 +37,49 @@ const githubIconStyle = css`
   }
 `;
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={(data) => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            padding: `0`,
-          }}
-        >
-          <main>{children}</main>
-          <footer css={footerStyle}>
-            <div style={{ minWidth: `115px` }}></div>
-            <a
-              css={githubIconStyle}
-              href="https://github.com/aghreed"
-              target="_blank"
-            />
-            <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
-              <div style={{ padding: `0 1em 1em 0` }}>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.com" style={{ color: `${lime}` }}>
-                  Gatsby
-                </a>
-              </div>
+    }
+  `);
+
+  return (
+    <>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          padding: `0`,
+        }}
+      >
+        <main>{children}</main>
+        <footer css={footerStyle}>
+          <div style={{ minWidth: `115px` }}></div>
+          <a
+            css={githubIconStyle}
+            href="https://github.com/aghreed"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
+          <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
+            <div style={{ padding: `0 1em 1em 0` }}>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.com" style={{ color: `${lime}` }}>
+                Gatsby
+              </a>
             </div>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-);
+          </div>
+        </footer>
+      </div>
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

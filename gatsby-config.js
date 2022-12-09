@@ -30,8 +30,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-102271686-1`
-      }
+        trackingId: `UA-102271686-1`,
+      },
     },
     {
       resolve: `gatsby-plugin-emotion`,
@@ -39,11 +39,11 @@ module.exports = {
         sourceMap: true,
         autoLabel: "dev-only",
         labelFormat: "[local]",
-        cssPropOptimization: true
-      }
+        cssPropOptimization: true,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    'gatsby-plugin-offline'
+    "gatsby-plugin-offline",
   ],
-}
+};

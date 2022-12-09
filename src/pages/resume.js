@@ -1,10 +1,10 @@
-import React from "react"
+import React from "react";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
-import Image2 from "../components/image2"
+import Image2 from "../components/image2";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 import { navy, offWhite, darkLime } from "../components/colors";
 
 const headerDividerStyle = css`
@@ -108,16 +108,34 @@ const Resume = () => (
     <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
       <Image2 />
     </div>
-    <h1 style={{ textAlign: `center`, marginTop: `3em`, fontVariant: `small-caps`, color: `${navy}` }}>resume</h1>
+    <h1
+      style={{
+        textAlign: `center`,
+        marginTop: `3em`,
+        fontVariant: `small-caps`,
+        color: `${navy}`,
+      }}
+    >
+      resume
+    </h1>
     <div css={headerDividerStyle} />
     {/* Feather */}
-    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}>
+    <section
+      style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}
+    >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
               <h2 style={{ marginBottom: `0.25rem` }}>
-                <a href="https://www.livefeather.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Feather</a>
+                <a
+                  href="https://www.livefeather.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: `${navy}` }}
+                >
+                  Feather
+                </a>
               </h2>
               <h4 css={companyTitleStyle}>Senior Engineer II</h4>
             </div>
@@ -128,26 +146,64 @@ const Resume = () => (
         <div css={rolesTextStyle}>
           <h4>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
-            <li>Cultivate a collaborative, empathetic, and engaging engineering culture</li>
-            <li>Advocate for and actively particpate in team Agile/Scrum practices</li>
-            <li>Serve as lead engineer of the team focused on supporting the e-commerce needs of the company</li>
-            <li>Collaborate closely with fellow engineers, product managers, designers as well as quality and data analysts</li>
-            <li>Lead front-end development and organize company best practices</li>
-            <li>Design custom REST APIs and lead the development of data services</li>
-            <li>Model schema changes and create and manage migrations to enact them</li>
-            <li>Partner with product managers to provide technical perspective on roadmaps and stakeholder requests alike</li>
-            <li>Brainstorm with designers to develop a design system of resuable UI components</li>
-            <li>Support QA in testing smarter through automating tests and building confidence in tools</li>
-            <li>Strategize with the Data team to capture insightful analytics to enable data driven decisions</li>
-            <li>Build trust and foster relationships directly with stakeholders</li>
-            <li>Maintain and support multiple internal and external applications through multiple iterations and release cycles</li>
+            <li>
+              Cultivate a collaborative, empathetic, and engaging engineering
+              culture
+            </li>
+            <li>
+              Advocate for and actively particpate in team Agile/Scrum practices
+            </li>
+            <li>
+              Serve as lead engineer of the team focused on supporting the
+              e-commerce needs of the company
+            </li>
+            <li>
+              Collaborate closely with fellow engineers, product managers,
+              designers as well as quality and data analysts
+            </li>
+            <li>
+              Lead front-end development and organize company best practices
+            </li>
+            <li>
+              Design custom REST APIs and lead the development of data services
+            </li>
+            <li>
+              Model schema changes and create and manage migrations to enact
+              them
+            </li>
+            <li>
+              Partner with product managers to provide technical perspective on
+              roadmaps and stakeholder requests alike
+            </li>
+            <li>
+              Brainstorm with designers to develop a design system of resuable
+              UI components
+            </li>
+            <li>
+              Support QA in testing smarter through automating tests and
+              building confidence in tools
+            </li>
+            <li>
+              Strategize with the Data team to capture insightful analytics to
+              enable data driven decisions
+            </li>
+            <li>
+              Build trust and foster relationships directly with stakeholders
+            </li>
+            <li>
+              Maintain and support multiple internal and external applications
+              through multiple iterations and release cycles
+            </li>
           </ul>
         </div>
         <div css={techTextStyle}>
           <h4>Technologies Used</h4>
           <div css={techListStyle}>
             <h5>Client</h5>
-            <p>Typescript, React, Redux, Webpack, Jest + Enzyme, Cypress, Segment, Contentful</p>
+            <p>
+              Typescript, React, Redux, Webpack, Jest + Enzyme, Cypress,
+              Segment, Contentful
+            </p>
             <h5>Server</h5>
             <p>Typescript, Node, Express, TypeORM, NestJS</p>
             <h5>Database</h5>
@@ -161,13 +217,22 @@ const Resume = () => (
       </div>
     </section>
     {/* Flyover Technical */}
-    <section style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}>
+    <section
+      style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}
+    >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
               <h2 style={{ marginBottom: `0.25rem` }}>
-                <a href="http://www.flyovertechnical.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Flyover Technical</a>
+                <a
+                  href="http://www.flyovertechnical.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: `${navy}` }}
+                >
+                  Flyover Technical
+                </a>
               </h2>
               <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
@@ -178,20 +243,34 @@ const Resume = () => (
         <div css={rolesTextStyle}>
           <h4>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
-            <li>Augment the technical staff of the Retirement Plans Division at Mutual of Omaha</li>
-            <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
-            <li>Collaborate closely with product owners, architects, designers, and business analysts</li>
+            <li>
+              Augment the technical staff of the Retirement Plans Division at
+              Mutual of Omaha
+            </li>
+            <li>
+              Advocate for and actively particpant in team Agile/Scrum practices
+            </li>
+            <li>
+              Collaborate closely with product owners, architects, designers,
+              and business analysts
+            </li>
             <li>Lead front-end app design and development</li>
             <li>Contribute to back-end design and development</li>
             <li>Develop internal library of resuable UI components</li>
-            <li>Maintain and support internal and external applications through multiple release cycles</li>
+            <li>
+              Maintain and support internal and external applications through
+              multiple release cycles
+            </li>
           </ul>
         </div>
         <div css={techTextStyle}>
           <h4>Technologies Used</h4>
           <div css={techListStyle}>
             <h5>Client</h5>
-            <p>Typescript, React, Redux, Webpack, Babel, Lerna, Rollup, Semantic-UI, SASS, Jest + Enzyme, NightmareJS</p>
+            <p>
+              Typescript, React, Redux, Webpack, Babel, Lerna, Rollup,
+              Semantic-UI, SASS, Jest + Enzyme, NightmareJS
+            </p>
             <h5>Server</h5>
             <p>Groovy, Spring Boot, Zuul, Node, Hapi</p>
             <h5>Database</h5>
@@ -205,12 +284,23 @@ const Resume = () => (
       </div>
     </section>
     {/* Object Partners, Inc */}
-    <section style={{ padding: `4rem 0`, color: `${offWhite}`, background: `${navy}` }}>
+    <section
+      style={{ padding: `4rem 0`, color: `${offWhite}`, background: `${navy}` }}
+    >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
-              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.objectpartners.com" target="_blank" rel="noopener noreferrer" style={{ color: `${offWhite}` }}>Object Partners, Inc</a></h2>
+              <h2 style={{ marginBottom: `0.25rem` }}>
+                <a
+                  href="http://www.objectpartners.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: `${offWhite}` }}
+                >
+                  Object Partners, Inc
+                </a>
+              </h2>
               <h4 css={companyTitleStyle}>Senior Consultant</h4>
             </div>
             <h4 css={companyDurationStyle}>January 2015 - December 2016</h4>
@@ -222,18 +312,31 @@ const Resume = () => (
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
             <li>Augment the technical staff of West Corporation</li>
-            <li>Advocate for and actively particpant in team Agile/Scrum practices</li>
-            <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
+            <li>
+              Advocate for and actively particpant in team Agile/Scrum practices
+            </li>
+            <li>
+              Collaborate closely with on-site and remote product owners,
+              designers, business analysts, developers, and quality assurers
+            </li>
             <li>Demonstrate sprint progress to stakeholders</li>
             <li>Lead front-end app design and development</li>
             <li>Develop internal library of resuable UI components</li>
             <li>Contribute to REST API design and development</li>
-            <li>Deploy and support internal applications through multiple release cycles</li>
+            <li>
+              Deploy and support internal applications through multiple release
+              cycles
+            </li>
           </ul>
-          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
+          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>
+            Technologies Used
+          </h4>
           <div css={techListStyle}>
             <h5>Client</h5>
-            <p>React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine + Sinon</p>
+            <p>
+              React, Redux, Webpack, Babel, Bootstrap, LESS, Karma + Jasmine +
+              Sinon
+            </p>
             <h5>Server</h5>
             <p>Node, Hapi, Apache</p>
             <h5>Architectural Patterns</h5>
@@ -245,14 +348,25 @@ const Resume = () => (
           <h4 style={{ marginLeft: `1.5rem` }}>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
             <li>Augment the technical staff of TD Ameritrade</li>
-            <li>Assimilate to and actively particpate in team Agile/Scrum practices</li>
+            <li>
+              Assimilate to and actively particpate in team Agile/Scrum
+              practices
+            </li>
             <li>Present sprint progress to stakeholders</li>
             <li>Lead front-end design and development</li>
             <li>Contribute to REST API design</li>
-            <li>Collaborate closely with on-site and remote product owners, designers, business analysts, developers, and quality assurers</li>
-            <li>Deploy and support an internal application through multiple release cycles</li>
+            <li>
+              Collaborate closely with on-site and remote product owners,
+              designers, business analysts, developers, and quality assurers
+            </li>
+            <li>
+              Deploy and support an internal application through multiple
+              release cycles
+            </li>
           </ul>
-          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>Technologies Used</h4>
+          <h4 style={{ marginLeft: `1.5rem`, marginTop: `2rem` }}>
+            Technologies Used
+          </h4>
           <div css={techListStyle}>
             <h5>Client</h5>
             <p>AngularJS, UI-Router, Bootstrap, Gulp, Mocha</p>
@@ -267,12 +381,27 @@ const Resume = () => (
       </div>
     </section>
     {/* Aviture, Inc */}
-    <section style={{ padding: `4rem 0 8rem`, color: `${navy}`, background: `${offWhite}` }}>
+    <section
+      style={{
+        padding: `4rem 0 8rem`,
+        color: `${navy}`,
+        background: `${offWhite}`,
+      }}
+    >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
           <div css={companyHeaderStyle}>
             <div css={companyNameAndTitleStyle}>
-              <h2 style={{ marginBottom: `0.25rem` }}><a href="http://www.aviture.us.com" target="_blank" rel="noopener noreferrer" style={{ color: `${navy}`}}>Aviture, Inc</a></h2>
+              <h2 style={{ marginBottom: `0.25rem` }}>
+                <a
+                  href="http://www.aviture.us.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: `${navy}` }}
+                >
+                  Aviture, Inc
+                </a>
+              </h2>
               <h4 css={companyTitleStyle}>Software Developer</h4>
             </div>
             <h4 css={companyDurationStyle}>February 2013 - January 2015</h4>
@@ -282,18 +411,30 @@ const Resume = () => (
         <div css={rolesTextStyle}>
           <h4>Roles and Responsibilities</h4>
           <ul css={roleListStyle}>
-            <li>Define, design, and develop custom software solutions for clients in-house</li>
+            <li>
+              Define, design, and develop custom software solutions for clients
+              in-house
+            </li>
             <li>Actively particpate in team Agile/Scrum practices</li>
             <li>Present technical progress to project stakeholders</li>
-            <li>Gain experience with emerging web standards and technologies</li>
-            <li>Collaborate closely with clients, designers, quality assurers, and subject matter experts</li>
+            <li>
+              Gain experience with emerging web standards and technologies
+            </li>
+            <li>
+              Collaborate closely with clients, designers, quality assurers, and
+              subject matter experts
+            </li>
           </ul>
         </div>
         <div css={techTextStyle}>
           <h4>Technologies Used</h4>
           <div css={techListStyle}>
             <h5>Client</h5>
-            <p>AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, PhoneGap, Ionic, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha, Jasmine, Chai</p>
+            <p>
+              AngularJS, Backbone, JQuery, Bootstrap, Semantic-UI, PhoneGap,
+              Ionic, SVG, Leaflet, Cesium, Grunt, Gulp, LESS, SASS, Mocha,
+              Jasmine, Chai
+            </p>
             <h5>Server</h5>
             <p>Java, Spring, Node, Express</p>
             <h5>Database</h5>
@@ -301,12 +442,15 @@ const Resume = () => (
             <h5>Architectural Patterns</h5>
             <p>SPA, REST</p>
             <h5>Infrastructure / DevOps</h5>
-            <p>Git, SVN, npm, bower, Jenkins, JIRA, Pivotal Tracker, BitBucket, Basecamp</p>
+            <p>
+              Git, SVN, npm, bower, Jenkins, JIRA, Pivotal Tracker, BitBucket,
+              Basecamp
+            </p>
           </div>
         </div>
       </div>
     </section>
   </Layout>
-)
+);
 
-export default Resume
+export default Resume;

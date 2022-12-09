@@ -1,12 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
 
-import Header from "./header"
+import Header from "./header";
 import { navy, offWhite, lime } from "./colors";
-import "./layout.css"
+import "./layout.css";
 
 import GithubIcon from "../images/github_icon.svg";
 import GithubIconHover from "../images/github_icon_hover.svg";
@@ -33,7 +33,7 @@ const githubIconStyle = css`
   margin: 2em 1em;
 
   &:hover {
-    background-image: url(${GithubIconHover})
+    background-image: url(${GithubIconHover});
   }
 `;
 
@@ -48,24 +48,30 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
-            padding: `0`
+            padding: `0`,
           }}
         >
           <main>{children}</main>
           <footer css={footerStyle}>
             <div style={{ minWidth: `115px` }}></div>
-            <a css={githubIconStyle} href="https://github.com/aghreed" target="_blank" />
+            <a
+              css={githubIconStyle}
+              href="https://github.com/aghreed"
+              target="_blank"
+            />
             <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
               <div style={{ padding: `0 1em 1em 0` }}>
                 © {new Date().getFullYear()}, Built with
                 {` `}
-                <a href="https://www.gatsbyjs.com" style={{ color: `${lime}`}}>Gatsby</a>
+                <a href="https://www.gatsbyjs.com" style={{ color: `${lime}` }}>
+                  Gatsby
+                </a>
               </div>
             </div>
           </footer>
@@ -73,10 +79,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

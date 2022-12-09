@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -16,17 +16,21 @@ import Img from "gatsby-image"
 const TBGImage = () => (
   <StaticQuery
     query={graphql`
-      query {
+      {
         portrait: file(relativePath: { eq: "tbg.png" }) {
           childImageSharp {
-            fluid(maxWidth: 640) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
+            gatsbyImageData(
+              width: 640
+              placeholder: TRACED_SVG
+              layout: CONSTRAINED
+            )
           }
         }
       }
     `}
-    render={data => <Img fluid={data.portrait.childImageSharp.fluid} />}
+    render={(data) => (
+      <GatsbyImage image={data.portrait.childImageSharp.gatsbyImageData} />
+    )}
   />
-)
-export default TBGImage
+);
+export default TBGImage;

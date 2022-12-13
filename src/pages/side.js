@@ -96,7 +96,6 @@ const rightSideImageStyle = css`
 `;
 
 const Side = ({ data }) => {
-  console.log("data: ", data);
   return (
     <Layout>
       <div style={{ maxWidth: `100%`, margin: `0 auto` }}>

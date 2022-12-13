@@ -119,9 +119,81 @@ const Resume = ({ data }) => (
       resume
     </h1>
     <div css={headerDividerStyle} />
-    {/* Feather */}
+    {/* Gatsby */}
     <section
       style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}
+    >
+      <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
+        <div css={companyHeaderContainerStyle}>
+          <div css={companyHeaderStyle}>
+            <div css={companyNameAndTitleStyle}>
+              <h2 style={{ marginBottom: `0.25rem` }}>
+                <a
+                  href="https://www.gatsbyjs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: `${navy}` }}
+                >
+                  Gatsby Inc
+                </a>
+              </h2>
+              <h4 css={companyTitleStyle}>Senior Engineer</h4>
+            </div>
+            <h4 css={companyDurationStyle}>Sept 2021 - Current</h4>
+          </div>
+          <h4>New York, NY (Remote)</h4>
+        </div>
+        <div css={rolesTextStyle}>
+          <h4>Roles and Responsibilities</h4>
+          <ul css={roleListStyle}>
+            <li>
+              Maintain (with many great peers) the gatsbyjs.com website, Gatsby
+              OSS documentation, and Gatsby Cloud dashboard application
+            </li>
+            <li>
+              Create and help moderate official and community Gatsby starters
+              — most notably the "Homepage Starters"
+            </li>
+            <li>
+              Collaborate with CMS partners to bring better CMS feature support
+              to Gatsby Cloud
+            </li>
+            <li>
+              Led the development of the <code>gatsby-provision</code>{" "}
+              convention, and two initial implementations for Contentful and
+              Sanity
+            </li>
+            <li>
+              Fulfill Gatsby Concierge services, guiding and supporting numerous
+              teams using Gatsby in the real world
+            </li>
+          </ul>
+        </div>
+        <div css={techTextStyle}>
+          <h4>Technologies Used</h4>
+          <div css={techListStyle}>
+            <h5>CMS</h5>
+            <p>Contentful, WordPress, DatoCMS, Sanity, Drupal, Kontent.ai</p>
+            <h5>Client</h5>
+            <p>Gatsby, Typescript, Jest, Cypress, LaunchDarkly, Segment</p>
+            <h5>Server</h5>
+            <p>Gatsby, Typescript, Express, Jest, Prisma</p>
+            <h5>Database</h5>
+            <p>MySQL, Postgres</p>
+            <h5>Architectural Patterns</h5>
+            <p>
+              JAMstack, GraphQL, REST, OAuth, Monorepos (NX, Lerna),
+              Microservices, Gatsby Themes
+            </p>
+            <h5>Infrastructure / DevOps</h5>
+            <p>Git, npm / yarn, Docker, Aiven, CircleCI, Google Cloud</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    {/* Feather */}
+    <section
+      style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}
     >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
@@ -137,9 +209,9 @@ const Resume = ({ data }) => (
                   Feather
                 </a>
               </h2>
-              <h4 css={companyTitleStyle}>Senior Engineer II</h4>
+              <h4 css={companyTitleStyle}>Senior Engineer</h4>
             </div>
-            <h4 css={companyDurationStyle}>April 2019 - Current</h4>
+            <h4 css={companyDurationStyle}>April 2019 - August 2021</h4>
           </div>
           <h4>New York, NY</h4>
         </div>
@@ -151,7 +223,8 @@ const Resume = ({ data }) => (
               culture
             </li>
             <li>
-              Advocate for and actively particpate in team Agile/Scrum practices
+              Advocate for and actively participate in team Agile/Scrum
+              practices
             </li>
             <li>
               Serve as lead engineer of the team focused on supporting the
@@ -184,8 +257,8 @@ const Resume = ({ data }) => (
               building confidence in tools
             </li>
             <li>
-              Strategize with the Data team to capture insightful analytics to
-              enable data driven decisions
+              Create strategy with the Data team to capture insightful analytics
+              to enable data driven decisions
             </li>
             <li>
               Build trust and foster relationships directly with stakeholders
@@ -218,7 +291,7 @@ const Resume = ({ data }) => (
     </section>
     {/* Flyover Technical */}
     <section
-      style={{ padding: `4rem 0`, color: `${navy}`, background: `${darkLime}` }}
+      style={{ padding: `4rem 0`, color: `${offWhite}`, background: `${navy}` }}
     >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
@@ -229,7 +302,7 @@ const Resume = ({ data }) => (
                   href="http://www.flyovertechnical.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: `${navy}` }}
+                  style={{ color: `${offWhite}` }}
                 >
                   Flyover Technical
                 </a>
@@ -248,7 +321,8 @@ const Resume = ({ data }) => (
               Mutual of Omaha
             </li>
             <li>
-              Advocate for and actively particpant in team Agile/Scrum practices
+              Advocate for and actively participant in team Agile/Scrum
+              practices
             </li>
             <li>
               Collaborate closely with product owners, architects, designers,
@@ -285,7 +359,7 @@ const Resume = ({ data }) => (
     </section>
     {/* Object Partners, Inc */}
     <section
-      style={{ padding: `4rem 0`, color: `${offWhite}`, background: `${navy}` }}
+      style={{ padding: `4rem 0`, color: `${navy}`, background: `${offWhite}` }}
     >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>
         <div css={companyHeaderContainerStyle}>
@@ -296,7 +370,7 @@ const Resume = ({ data }) => (
                   href="http://www.objectpartners.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${navy}` }}
                 >
                   Object Partners, Inc
                 </a>
@@ -313,7 +387,8 @@ const Resume = ({ data }) => (
           <ul css={roleListStyle}>
             <li>Augment the technical staff of West Corporation</li>
             <li>
-              Advocate for and actively particpant in team Agile/Scrum practices
+              Advocate for and actively participant in team Agile/Scrum
+              practices
             </li>
             <li>
               Collaborate closely with on-site and remote product owners,
@@ -349,7 +424,7 @@ const Resume = ({ data }) => (
           <ul css={roleListStyle}>
             <li>Augment the technical staff of TD Ameritrade</li>
             <li>
-              Assimilate to and actively particpate in team Agile/Scrum
+              Assimilate to and actively participate in team Agile/Scrum
               practices
             </li>
             <li>Present sprint progress to stakeholders</li>
@@ -385,7 +460,7 @@ const Resume = ({ data }) => (
       style={{
         padding: `4rem 0 8rem`,
         color: `${navy}`,
-        background: `${offWhite}`,
+        background: `${darkLime}`,
       }}
     >
       <div style={{ margin: `0 auto`, maxWidth: `1040px` }}>

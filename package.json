@@ -7,7 +7,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "@vanilla-extract/webpack-plugin": "^2.2.0",
     "gatsby": "^5.0.0",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-emotion": "^8.2.0",

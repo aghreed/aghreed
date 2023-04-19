@@ -1,14 +1,14 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { lime, navy, offWhite } from "../components/colors";
+import { colors } from "../components/colors";
+import { Portrait } from "../components/portrait";
 
 const h2Style = css`
-  color: ${offWhite};
+  color: ${colors.background};
   margin-bottom: 0.5em;
   font-weight: 400;
   letter-spacing: 0px;
@@ -23,10 +23,10 @@ const h4Style = css`
   font-family: "Source Sans", sans-serif;
 `;
 
-const limeDividerStyle = css`
+const dividerStyle = css`
   width: 60%;
   height: 1px;
-  background: ${lime};
+  background: ${colors.accent};
   margin: 0 auto;
   transition: width 500ms linear;
   @media (max-width: 550px) {
@@ -35,27 +35,28 @@ const limeDividerStyle = css`
 `;
 
 const textBlockStyle = css`
-  width: 45%;
+  width: 42%;
   margin: 0 auto;
   padding: 3rem 0;
-  color: ${offWhite};
+  color: ${colors.background};
   @media (max-width: 550px) {
-    width: 70%;
+    width: 65%;
   }
   p {
+    margin-bottom: 0;
     text-align: justify;
   }
 `;
 
 const buttonStyle = css`
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem 2rem;
-  background: ${navy};
-  border: 1px solid ${lime};
+  background: ${colors.text};
+  border: 1px solid ${colors.accent};
   cursor: pointer;
 
   a {
-    color: ${offWhite};
+    color: ${colors.background};
     font-weight: 400;
     &:hover {
       text-decoration: none;
@@ -63,77 +64,90 @@ const buttonStyle = css`
   }
 
   &:hover {
-    background: ${lime};
+    background: ${colors.accent};
 
     a {
-      color: ${navy};
+      color: ${colors.text};
     }
   }
 `;
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
+  const yearsInTheIndustry = new Date(Date.now()).getUTCFullYear() - 2013;
+
   return (
     <Layout>
-      <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
-        <GatsbyImage image={getImage(data.file)} />
+      <div
+        style={{
+          display: `flex`,
+          justifyContent: `center`,
+          width: `100%`,
+          margin: `0 auto 4.9rem`,
+          height: `325px`,
+        }}
+      >
+        <Portrait />
       </div>
       <div
-        style={{ background: `${navy}`, width: `100%`, textAlign: `center` }}
+        style={{
+          background: `${colors.text}`,
+          width: `100%`,
+          textAlign: `center`,
+        }}
       >
         <div style={{ padding: `3rem 1rem` }}>
+          <h2 css={h2Style}>Hey there!</h2>
           <h2 css={h2Style}>You can call me Alex.</h2>
           <h2 css={h2Style}>Or Reed.</h2>
           <h2 css={h2Style}>Most people just call me Reed.</h2>
         </div>
-        <div css={limeDividerStyle} />
+        <div css={dividerStyle} />
         <div css={textBlockStyle}>
-          <p style={{ color: `${offWhite}` }}>
-            I'm a software developer based in Queens, New York by way of Omaha,
-            Nebraska and Manhattan, Kansas. I'm passionate about building
-            intuitive and useful applications that focus on human experiences.
+          <p style={{ color: `${colors.background}` }}>
+            I'm a software engineer based in Queens, New York who can do a
+            little bit of everything, but is passionate about UI. I like to
+            build websites and applications that focus on human experiences.
           </p>
-          <h4 css={h4Style}>
-            I like using technology purposefully, not just for technology's
-            sake.
-          </h4>
         </div>
-        <div css={limeDividerStyle} />
+        <div css={dividerStyle} />
         <div css={textBlockStyle}>
           <h2>Professional Work</h2>
           <p>
-            Throughout my eight years working in the field, I've had the
+            In my {yearsInTheIndustry} years working in the field, I've had the
             opportunity to create custom software in the startup, commercial and
             government domains. I value trust, quality communication, and a
-            collaborative and supportive work environment. I enjoy working
-            closely with clients to best understand their needs.
+            collaborative and supportive work environment.
           </p>
-          <h4 css={h4Style}> I believe in people over process. </h4>
+          <h4 css={h4Style}>
+            I'm a believer in people over process. But I like process too.
+          </h4>
           <p>
-            Working closely with others is the only way to deliver well-tested,
-            quality software tailored for the needs of the client.
+            The most successful (and let's be real, fun) projects I have been
+            involved in were built on healthy communication and collaboration.
+            Whether the team process is a flavor of scrum, a kanban board, or a
+            bit more like a hackathon — I'm just for a process that enables flow
+            for everyone in their respective disciplines.
           </p>
           <button css={buttonStyle}>
             <Link to="/resume/">View Resume</Link>
           </button>
         </div>
-        <div css={limeDividerStyle} />
+        <div css={dividerStyle} />
         <div css={textBlockStyle} style={{ paddingBottom: `7.5em` }}>
           <h2>Side Work</h2>
           <p>
             For me, side work is not just about doing a favor for a friend or
-            pursuing a passion project. It’s about meeting people, making new
-            connections and challenging myself.
+            pursuing a passion project. It's about making new connections,
+            learning something new and challenging myself.
           </p>
           <h4 css={h4Style}>
-            {" "}
-            I care deeply about the collaborative nature of technology.{" "}
+            I care deeply about the collaborative nature of technology.
           </h4>
           <p>
-            Growth rarely happens in isolation — which is why, in pre-pandemic
-            times, you could often find me at conferences, meetups, or
-            workshops. I love an excuse to experiment with a technology I'm
-            unfamiliar with as much as I enjoy sharing something I'm well-versed
-            in.
+            Growth rarely happens in isolation — which is why you can often find
+            me at conferences, meetups, or workshops. I love an excuse to
+            experiment with a technology I'm unfamiliar with as much as I enjoy
+            sharing something I'm well-versed in.
           </p>
           <button css={buttonStyle}>
             <Link to="/side/">View Side Work</Link>
@@ -157,17 +171,8 @@ export function Head() {
         `resume`,
         `portfolio`,
         `aghreed`,
+        `Alex Reed`,
       ]}
     />
   );
 }
-
-export const query = graphql`
-  query IndexImage {
-    file(relativePath: { eq: "reed-portrait.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
-      }
-    }
-  }
-`;

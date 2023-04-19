@@ -5,7 +5,7 @@ import { css, jsx } from "@emotion/react";
 import { getImage, GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { navy, offWhite, darkLime } from "../components/colors";
+import { colors, darkOrange } from "../components/colors";
 
 import WhitneyPortfolioGIF from "../images/whitneyportfolio.gif";
 import ControllerAsSyntaxGIF from "../images/controller-as-syntax.gif";
@@ -13,7 +13,7 @@ import ControllerAsSyntaxGIF from "../images/controller-as-syntax.gif";
 const headerDividerStyle = css`
   width: 60%;
   height: 1px;
-  background: ${navy};
+  background: ${colors.text};
   margin: 1.75rem auto;
   transition: width 500ms linear;
   @media (max-width: 850px) {
@@ -98,14 +98,14 @@ const rightSideImageStyle = css`
 const Side = ({ data }) => {
   return (
     <Layout>
-      <div style={{ maxWidth: `100%`, margin: `0 auto` }}>
-        <GatsbyImage image={getImage(data.hero)} />
+      <div style={{ display: `flex`, justifyContent: `center` }}>
+        <GatsbyImage image={getImage(data.hero)} alt="side-work-hero" />
       </div>
       <h1
         style={{
           textAlign: `center`,
           marginTop: `3em`,
-          color: `${navy}`,
+          color: `${colors.text}`,
           fontVariant: `small-caps`,
         }}
       >
@@ -116,8 +116,8 @@ const Side = ({ data }) => {
       <section
         style={{
           padding: `4rem 0`,
-          background: `${offWhite}`,
-          color: `${navy}`,
+          background: `${colors.background}`,
+          color: `${colors.text}`,
         }}
       >
         <div css={goofySectionContainerStyle}>
@@ -136,7 +136,7 @@ const Side = ({ data }) => {
           <div css={rightSideTextStyle}>
             <h2>
               <a
-                style={{ color: `${navy}` }}
+                style={{ color: `${colors.text}` }}
                 href="https://github.com/aghreed/yonder.guide"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -164,8 +164,8 @@ const Side = ({ data }) => {
       <section
         style={{
           padding: `5rem 0`,
-          background: `${navy}`,
-          color: `${offWhite}`,
+          background: `${colors.text}`,
+          color: `${colors.background}`,
         }}
       >
         <div css={sectionContainerStyle}>
@@ -175,7 +175,7 @@ const Side = ({ data }) => {
                 href="http://www.whitneyjenich.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: `${offWhite}` }}
+                style={{ color: `${colors.background}` }}
               >
                 Whitney's Portfolio
               </a>
@@ -221,8 +221,8 @@ const Side = ({ data }) => {
       <section
         style={{
           padding: `5rem 0`,
-          background: `${offWhite}`,
-          color: `${navy}`,
+          background: `${colors.background}`,
+          color: `${colors.text}`,
         }}
       >
         <div css={goofySectionContainerStyle}>
@@ -248,7 +248,7 @@ const Side = ({ data }) => {
                 href="http://www.tbgco.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: `${navy}` }}
+                style={{ color: `${colors.text}` }}
               >
                 The Benefit Group
               </a>
@@ -264,7 +264,7 @@ const Side = ({ data }) => {
                 href="http://www.bridgetmcquillan.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: `underline`, color: `${navy}` }}
+                style={{ textDecoration: `underline`, color: `${colors.text}` }}
               >
                 {" "}
                 Bridget McQuillan{" "}
@@ -282,8 +282,8 @@ const Side = ({ data }) => {
       <section
         style={{
           padding: `5rem 0`,
-          background: `${darkLime}`,
-          color: `${navy}`,
+          background: `${darkOrange}`,
+          color: `${colors.text}`,
         }}
       >
         <div css={sectionContainerStyle}>
@@ -297,7 +297,7 @@ const Side = ({ data }) => {
             <p>
               Thanks to the good folks at{" "}
               <a
-                style={{ color: `${navy}`, textDecoration: `underline` }}
+                style={{ color: `${colors.text}`, textDecoration: `underline` }}
                 href="http://techomaha.com/2015/11/alex-reed-controller-as/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -308,7 +308,7 @@ const Side = ({ data }) => {
               syntax, why you should be using it, and something about soup and
               stew. The source code of the presentation is also available on{" "}
               <a
-                style={{ color: `${navy}`, textDecoration: `underline` }}
+                style={{ color: `${colors.text}`, textDecoration: `underline` }}
                 href="https://github.com/aghreed/controllerAs-syntax-slides"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -347,8 +347,8 @@ const Side = ({ data }) => {
       <section
         style={{
           padding: `5rem 0`,
-          background: `${navy}`,
-          color: `${offWhite}`,
+          background: `${colors.text}`,
+          color: `${colors.background}`,
         }}
       >
         <div css={sectionContainerStyle}>
@@ -357,7 +357,7 @@ const Side = ({ data }) => {
             <ul>
               <li>
                 <a
-                  style={{ color: `${offWhite} ` }}
+                  style={{ color: `${colors.background} ` }}
                   href="https://reactnorway.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -367,7 +367,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite} ` }}
+                  style={{ color: `${colors.background} ` }}
                   href="http://midwestjs.com/#/main"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -377,7 +377,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${colors.background}` }}
                   href="https://www.reactrally.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -387,7 +387,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${colors.background}` }}
                   href="https://2018.nejsconf.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -402,7 +402,7 @@ const Side = ({ data }) => {
             <ul>
               <li>
                 <a
-                  style={{ color: `${offWhite} ` }}
+                  style={{ color: `${colors.background} ` }}
                   href="https://nebraskajs.com/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -412,7 +412,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${colors.background}` }}
                   href="https://twitter.com/ngnebraska"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -422,7 +422,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${colors.background}` }}
                   href="https://www.meetup.com/LearnSwiftOmaha/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -432,7 +432,7 @@ const Side = ({ data }) => {
               </li>
               <li>
                 <a
-                  style={{ color: `${offWhite}` }}
+                  style={{ color: `${colors.background}` }}
                   href="https://www.nodeschool.io"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -456,9 +456,9 @@ export function Head() {
 
 export const query = graphql`
   query SideImage {
-    hero: file(relativePath: { eq: "reed-portrait-7.jpg" }) {
+    hero: file(relativePath: { eq: "hawaii-landscape.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH)
+        gatsbyImageData(layout: FIXED, height: 600)
       }
     }
     yonder: file(relativePath: { eq: "yonderguide.png" }) {

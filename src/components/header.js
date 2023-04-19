@@ -3,11 +3,10 @@ import PropTypes from "prop-types";
 import React from "react";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
-
-const navy = `#1B3C59`;
+import { navy } from "./colors";
 
 const Header = ({ siteTitle }) => (
-  <header
+  <nav
     css={css`
       margin: 2rem 0;
       text-align: center;
@@ -54,10 +53,8 @@ const Header = ({ siteTitle }) => (
       />
       <div
         css={css`
-          display: flex;
           width: 40%;
           margin: 0 auto;
-          justify-content: space-between;
           transition: width 500ms linear;
           @media (max-width: 850px) {
             width: 60%;
@@ -67,40 +64,63 @@ const Header = ({ siteTitle }) => (
           }
         `}
       >
-        <h3>
-          <Link
-            to="/resume/"
-            style={{ color: `${navy}`, fontVariant: `small-caps` }}
-            activeStyle={{ textDecoration: `underline` }}
-          >
-            resume
-          </Link>
-        </h3>
-        <h3>
-          <Link
-            to="/"
-            style={{ color: `${navy}`, fontVariant: `small-caps` }}
-            activeStyle={{ textDecoration: `underline` }}
-          >
-            home
-          </Link>
-        </h3>
-        <h3>
-          <Link
-            to="/side/"
-            style={{
-              color: `${navy}`,
-              fontVariant: `small-caps`,
-              wordSpacing: `-2px`,
-            }}
-            activeStyle={{ textDecoration: `underline`, wordSpacing: `-2px` }}
-          >
-            side work
-          </Link>
-        </h3>
+        <ul
+          css={css`
+            display: grid;
+            list-style: none;
+            margin: 0;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+
+            li {
+              font-size: 1.25rem;
+              text-align: center;
+            }
+
+            a:hover {
+              border-bottom: 1px solid ${navy};
+            }
+          `}
+        >
+          <li>
+            <Link
+              to="/resume/"
+              style={{ color: `${navy}`, fontVariant: `small-caps` }}
+              activeStyle={{ borderBottom: `2px solid ${navy}` }}
+            >
+              resume
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/"
+              style={{ color: `${navy}`, fontVariant: `small-caps` }}
+              activeStyle={{ borderBottom: `2px solid ${navy}` }}
+            >
+              home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/side/"
+              style={{
+                color: `${navy}`,
+                fontVariant: `small-caps`,
+                wordSpacing: `-2px`,
+              }}
+              activeStyle={{
+                borderBottom: `2px solid ${navy}`,
+                wordSpacing: `-2px`,
+              }}
+            >
+              side work
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
-  </header>
+  </nav>
 );
 
 Header.propTypes = {

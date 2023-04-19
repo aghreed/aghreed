@@ -1,14 +1,15 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
+// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import { lime, navy, offWhite } from "../components/colors";
+import { colors } from "../components/colors";
+import { Portrait } from "../components/portrait";
 
 const h2Style = css`
-  color: ${offWhite};
+  color: ${colors.background};
   margin-bottom: 0.5em;
   font-weight: 400;
   letter-spacing: 0px;
@@ -26,7 +27,7 @@ const h4Style = css`
 const dividerStyle = css`
   width: 60%;
   height: 1px;
-  background: ${lime};
+  background: ${colors.accent};
   margin: 0 auto;
   transition: width 500ms linear;
   @media (max-width: 550px) {
@@ -38,7 +39,7 @@ const textBlockStyle = css`
   width: 42%;
   margin: 0 auto;
   padding: 3rem 0;
-  color: ${offWhite};
+  color: ${colors.background};
   @media (max-width: 550px) {
     width: 65%;
   }
@@ -51,12 +52,12 @@ const textBlockStyle = css`
 const buttonStyle = css`
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background: ${navy};
-  border: 1px solid ${lime};
+  background: ${colors.text};
+  border: 1px solid ${colors.accent};
   cursor: pointer;
 
   a {
-    color: ${offWhite};
+    color: ${colors.background};
     font-weight: 400;
     &:hover {
       text-decoration: none;
@@ -64,35 +65,17 @@ const buttonStyle = css`
   }
 
   &:hover {
-    background: ${lime};
+    background: ${colors.accent};
 
     a {
-      color: ${navy};
+      color: ${colors.text};
     }
   }
 `;
 
-const IndexPage = ({ data }) => {
-  const [imageToDisplay, setImageToDisplay] = React.useState(4);
-  const mouseMoveHandler = (e) => {
-    const windowWidth = window.innerWidth;
-    // divide width by number of images in play to create "swimlaneWidth"
-    const swimlaneWidth = Math.round(windowWidth / 9);
-    const visibleImageIndex = Math.round(
-      (e.clientX - Math.round(swimlaneWidth / 2)) / swimlaneWidth
-    );
-    console.log("image to display: ", visibleImageIndex + 1);
-    setImageToDisplay(visibleImageIndex + 1);
-  };
-  React.useEffect(() => {
-    if (!window) {
-      return null;
-    }
-    window.addEventListener("mousemove", mouseMoveHandler);
-
-    return () => window.removeEventListener("mousemove", mouseMoveHandler);
-  }, []);
+const IndexPage = () => {
   const yearsInTheIndustry = new Date(Date.now()).getUTCFullYear() - 2013;
+
   return (
     <Layout>
       <div
@@ -104,81 +87,14 @@ const IndexPage = ({ data }) => {
           height: `325px`,
         }}
       >
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay <= 1 ? "visible" : "hidden",
-          }}
-          image={getImage(data.left4)}
-          alt="left-4"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 2 ? "visible" : "hidden",
-          }}
-          image={getImage(data.left3)}
-          alt="left-3"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 3 ? "visible" : "hidden",
-          }}
-          image={getImage(data.left2)}
-          alt="left-2"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 4 ? "visible" : "hidden",
-          }}
-          image={getImage(data.left1)}
-          alt="left-1"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 5 ? "visible" : "hidden",
-          }}
-          image={getImage(data.center)}
-          alt="center"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 6 ? "visible" : "hidden",
-          }}
-          image={getImage(data.right1)}
-          alt="right-1"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 7 ? "visible" : "hidden",
-          }}
-          image={getImage(data.right2)}
-          alt="right-2"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay === 8 ? "visible" : "hidden",
-          }}
-          image={getImage(data.right3)}
-          alt="right-3"
-        />
-        <GatsbyImage
-          style={{
-            position: "absolute",
-            visibility: imageToDisplay >= 9 ? "visible" : "hidden",
-          }}
-          image={getImage(data.right4)}
-          alt="right-4"
-        />
+        <Portrait />
       </div>
       <div
-        style={{ background: `${navy}`, width: `100%`, textAlign: `center` }}
+        style={{
+          background: `${colors.text}`,
+          width: `100%`,
+          textAlign: `center`,
+        }}
       >
         <div style={{ padding: `3rem 1rem` }}>
           <h2 css={h2Style}>Hey there!</h2>
@@ -188,7 +104,7 @@ const IndexPage = ({ data }) => {
         </div>
         <div css={dividerStyle} />
         <div css={textBlockStyle}>
-          <p style={{ color: `${offWhite}` }}>
+          <p style={{ color: `${colors.background}` }}>
             I'm a software engineer based in Queens, New York who can do a
             little bit of everything, but is passionate about UI. I like to
             build websites and applications that focus on human experiences.
@@ -208,10 +124,10 @@ const IndexPage = ({ data }) => {
           </h4>
           <p>
             The most successful (and let's be real, fun) projects I have been
-            involved in were powered by healthy communication and collaboration.
-            Doesn't matter whether the team process is a flavor of scrum, a
-            kanban board, or a bit more like a hackathon. I'm for a process that
-            enables flow for everyone in their respective discipline.
+            involved in were built on healthy communication and collaboration.
+            Whether the team process is a flavor of scrum, a kanban board, or a
+            bit more like a hackathon — I'm just for a process that enables flow
+            for everyone in their respective disciplines.
           </p>
           <button css={buttonStyle}>
             <Link to="/resume/">View Resume</Link>
@@ -256,93 +172,8 @@ export function Head() {
         `resume`,
         `portfolio`,
         `aghreed`,
+        `Alex Reed`,
       ]}
     />
   );
 }
-
-export const query = graphql`
-  query IndexImage {
-    center: file(relativePath: { eq: "center.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    right1: file(relativePath: { eq: "right-1.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    right2: file(relativePath: { eq: "right-2.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    right3: file(relativePath: { eq: "right-3.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    right4: file(relativePath: { eq: "right-4.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    left1: file(relativePath: { eq: "left-1.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    left2: file(relativePath: { eq: "left-2.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    left3: file(relativePath: { eq: "left-3.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-    left4: file(relativePath: { eq: "left-4.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(
-          layout: FIXED
-          height: 325
-          transformOptions: { grayscale: true }
-        )
-      }
-    }
-  }
-`;

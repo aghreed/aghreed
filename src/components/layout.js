@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { css, jsx } from "@emotion/react";
 
 import Header from "./header";
-import { navy, offWhite, lime } from "./colors";
+import { colors } from "./colors";
 import "./layout.css";
 
 import GithubIcon from "../images/github_icon.svg";
@@ -14,11 +14,11 @@ import GithubIconHover from "../images/github_icon_hover.svg";
 const footerStyle = css`
   display: flex;
   justify-content: space-between;
-  background: ${navy};
+  background: ${colors.text};
   width: 100%;
   font-size: 10px;
   text-align: right;
-  color: ${offWhite};
+  color: ${colors.background};
 `;
 
 const githubIconStyle = css`
@@ -31,6 +31,7 @@ const githubIconStyle = css`
   background-size: contain;
   transition: background-image 300ms linear;
   margin: 2em 1em;
+  color: transparent;
 
   &:hover {
     background-image: url(${GithubIconHover});
@@ -65,12 +66,18 @@ const Layout = ({ children }) => {
             href="https://github.com/aghreed"
             target="_blank"
             rel="noopener noreferrer"
-          />
+            aria-label="Link to GitHub profile"
+          >
+            Github Link
+          </a>
           <div style={{ minWidth: `115px`, alignSelf: `flex-end` }}>
             <div style={{ padding: `0 1em 1em 0` }}>
               © {new Date().getFullYear()}, Built with
               {` `}
-              <a href="https://www.gatsbyjs.com" style={{ color: `${lime}` }}>
+              <a
+                href="https://www.gatsbyjs.com"
+                style={{ color: `${colors.accent}` }}
+              >
                 Gatsby
               </a>
             </div>

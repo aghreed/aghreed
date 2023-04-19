@@ -4,7 +4,7 @@ const flyoverTechnicalResume = {
   companyName: "Flyover Technical",
   companyWebsite: "https://www.flyovertechnical.com",
   positionTitle: "Senior Consultant",
-  dateRange: "April 2017 - December 2018",
+  dateRange: "Apr 2017 - Dec 2018",
   location: "Omaha, NE",
   backgroundColor: colors.text,
   fontColor: colors.background,

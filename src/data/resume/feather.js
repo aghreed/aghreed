@@ -4,9 +4,9 @@ const featherResume = {
   companyName: "Feather",
   companyWebsite: "https://livefeather.com",
   positionTitle: "Senior Engineer",
-  dateRange: "April 2019 - Aug 2021",
+  dateRange: "Apr 2019 - Aug 2021",
   location: "New York, NY",
-  backgroundColor: colors.accentDark,
+  backgroundColor: colors.accent,
   fontColor: colors.text,
   roles: [
     {

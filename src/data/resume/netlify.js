@@ -1,4 +1,6 @@
+import React from "react";
 import { colors } from "../../components/colors";
+import { ExternalLink } from "../../components/resume/link";
 
 const netlifyResume = {
   companyName: "Netlify",
@@ -11,7 +13,14 @@ const netlifyResume = {
   roles: [
     {
       roleResponsibilities: [
-        "Serve as a Concierge Engineer to a dozen Enterprise level clients",
+        <>
+          Serve as a{" "}
+          <ExternalLink
+            uri="https://www.gatsbyjs.com/products/concierge/"
+            text="Concierge Engineer"
+          />{" "}
+          to a dozen Enterprise level clients
+        </>,
         "Get hands-on with client code bases to provide personalized Gatsby framework best practices",
         "Deliver front-end performance audits to increase client-side performance",
         "Deliver build audits to decrease site build times",
@@ -22,7 +31,7 @@ const netlifyResume = {
       technologiesUsed: [
         {
           techType: "CMS",
-          tech: "Contentful, WordPress, Sanity, Drupal, Contentstack, Wagtail",
+          tech: "Contentful, WordPress, Sanity, Drupal, Contentstack",
         },
         {
           techType: "Client",
@@ -30,11 +39,19 @@ const netlifyResume = {
         },
         {
           techType: "Server",
-          tech: "Gatsby, Typescript, Express",
+          tech: "Gatsby, Typescript",
+        },
+        {
+          techType: "Database",
+          tech: "MySQL, Postgres",
         },
         {
           techType: "Architectural Patterns",
-          tech: "JAMstack, GraphQL, REST, OAuth, Monorepos (NX, Lerna, yarn workspaces), Microservices, Gatsby Themes",
+          tech: "JAMstack, GraphQL, Monorepos (NX, Lerna, yarn workspaces), Microservices, Gatsby Themes",
+        },
+        {
+          techType: "Infrastructure / DevOps",
+          tech: "Google Cloud, AWS, Bamboo, git, npm, artifactory, Zendesk, Zenhub",
         },
       ],
     },

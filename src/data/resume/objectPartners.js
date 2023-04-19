@@ -4,10 +4,10 @@ const objectPartnersResume = {
   companyName: "Object Partners, Inc",
   companyWebsite: "http://www.objectpartners.com",
   positionTitle: "Senior Consultant",
-  dateRange: "January 2015 - December 2016",
+  dateRange: "Jan 2015 - Dec 2016",
   location: "Omaha, NE",
-  backgroundColor: colors.text,
-  fontColor: colors.background,
+  backgroundColor: colors.neutral,
+  fontColor: colors.text,
   roles: [
     {
       positionTitle: "West Corporation",

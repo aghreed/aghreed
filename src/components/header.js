@@ -114,7 +114,7 @@ const Header = ({ siteTitle }) => (
                 wordSpacing: `-2px`,
               }}
             >
-              side work
+              side
             </Link>
           </li>
         </ul>

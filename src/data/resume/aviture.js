@@ -4,10 +4,10 @@ const avitureResume = {
   companyName: "Aviture, Inc",
   companyWebsite: "http://www.aviture.us.com",
   positionTitle: "Software Engineer",
-  dateRange: "February 2013 - January 2015",
+  dateRange: "Feb 2013 - Jan 2015",
   location: "Omaha, NE",
-  backgroundColor: colors.text,
-  fontColor: colors.background,
+  backgroundColor: colors.background,
+  fontColor: colors.text,
   roles: [
     {
       roleResponsibilities: [

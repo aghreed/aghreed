@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 // eslint-disable-next-line
 import { css, jsx } from "@emotion/react";
 import Layout from "../components/layout";

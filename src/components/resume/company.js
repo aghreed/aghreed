@@ -83,28 +83,9 @@ const techListStyle = css`
 
   p {
     margin-left: 3rem;
+    margin-bottom: 0;
   }
 `;
-
-// export type CompanyProps = {
-//   companyName: string;
-//   positionTitle: string;
-//   dateRange: string;
-//   location: string;
-//   backgroundColor: string;
-//   fontColor: string;
-//   roles: CompanyRole[];
-// };
-
-// type CompanyRole = {
-//   roleResponsibilities: React.ReactNode[];
-//   technologiesUsed: TechnologyUsed[];
-// };
-
-// type TechnologyUsed = {
-//   techType: string;
-//   tech: string;
-// };
 
 export const Company = ({
   companyName,
@@ -151,7 +132,9 @@ export const Company = ({
               <h4>Roles and Responsibilities</h4>
               <ul css={roleListStyle}>
                 {role.roleResponsibilities.map((responsibility, i) => (
-                  <li key={i}>{responsibility}</li>
+                  <li key={i}>
+                    <p>{responsibility}</p>
+                  </li>
                 ))}
               </ul>
             </div>

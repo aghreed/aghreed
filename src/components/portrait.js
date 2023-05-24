@@ -101,8 +101,8 @@ export const Portrait = () => {
   };
 
   React.useEffect(() => {
-    if (!window) {
-      return null;
+    if (!window || window.innerWidth <= 1080) {
+      return;
     }
     window.addEventListener("mousemove", mouseMoveHandler);
 
